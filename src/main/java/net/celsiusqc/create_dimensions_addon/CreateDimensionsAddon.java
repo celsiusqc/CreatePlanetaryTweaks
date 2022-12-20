@@ -1,6 +1,7 @@
 package net.celsiusqc.create_dimensions_addon;
 
 import com.mojang.logging.LogUtils;
+import net.celsiusqc.create_dimensions_addon.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -22,6 +23,8 @@ public class CreateDimensionsAddon {
     public CreateDimensionsAddon()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
