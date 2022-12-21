@@ -1,7 +1,7 @@
-package net.celsiusqc.create_dimensions_addon;
+package net.celsiusqc.cd_addon;
 
 import com.mojang.logging.LogUtils;
-import net.celsiusqc.create_dimensions_addon.item.ModItems;
+import net.celsiusqc.cd_addon.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -17,7 +17,7 @@ import org.slf4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CreateDimensionsAddon.MOD_ID)
 public class CreateDimensionsAddon {
-    public static final String MOD_ID = "create_dimensions_addon";
+    public static final String MOD_ID = "cd_addon";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public CreateDimensionsAddon()
