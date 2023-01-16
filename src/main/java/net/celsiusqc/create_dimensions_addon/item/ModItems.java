@@ -17,6 +17,34 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
     public static final RegistryObject<Item> DIAMOND_DUST = ITEMS.register("diamond_dust",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> AMETRINE_DUST = ITEMS.register("ametrine_dust",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> BURNING = ITEMS.register("burning",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> WARM = ITEMS.register("warm",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> COMFY = ITEMS.register("comfy",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> COLD = ITEMS.register("cold",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> FREEZING = ITEMS.register("freezing",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+
+    public static final RegistryObject<Item> AUTUMN = ITEMS.register("autumn",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> DRY = ITEMS.register("dry",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> SPRING = ITEMS.register("spring",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> SUMMER = ITEMS.register("summer",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> WET = ITEMS.register("wet",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> WINTER = ITEMS.register("winter",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+
+    public static final RegistryObject<Item> GUNPOWDER_INFUSED_AMETRINE = ITEMS.register("gunpowder_infused_ametrine",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
 
 
 

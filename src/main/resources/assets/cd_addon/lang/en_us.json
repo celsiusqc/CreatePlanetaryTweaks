@@ -2,6 +2,22 @@
   "item.cd_addon.shattered_warp_stone": "Shattered Warp Stone",
   "item.cd_addon.warp_stone": "Warp Stone",
   "item.cd_addon.diamond_dust": "Diamond Dust",
+  "item.cd_addon.ametrine_dust": "Ametrine Dust",
+
+  "item.cd_addon.burning": "Burning Icon",
+  "item.cd_addon.warm": "Warm Icon",
+  "item.cd_addon.comfy": "Comfy Icon",
+  "item.cd_addon.cold": "Cold Icon",
+  "item.cd_addon.freezing": "Freezing Icon",
+
+  "item.cd_addon.autumn": "Autumn Icon",
+  "item.cd_addon.dry": "Dry Icon",
+  "item.cd_addon.spring": "Spring Icon",
+  "item.cd_addon.summer": "Summer Icon",
+  "item.cd_addon.wet": "Wet Icon",
+  "item.cd_addon.winter": "Winter Icon",
+
+  "item.cd_addon.gunpowder_infused_ametrine": "Gunpowder Infused Ametrine",
 
   "itemGroup.cd_addon_tab": "Create Dimensions Addon"
 }
