@@ -19,5 +19,11 @@
 
   "item.cd_addon.gunpowder_infused_ametrine": "Gunpowder Infused Ametrine",
 
+  "item.cd_addon.crushed_aquite_ore": "Crushed Aquite Ore",
+  "item.cd_addon.crushed_charoite_ore": "Crushed Charoite Ore",
+  "item.cd_addon.crushed_falsite_ore": "Crushed Falsite Ore",
+  "item.cd_addon.crushed_horizonite_ore": "Crushed Horizonite Ore",
+  "item.cd_addon.crushed_ventium_ore": "Crushed Ventium Ore",
+
   "itemGroup.cd_addon_tab": "Create Dimensions Addon"
 }

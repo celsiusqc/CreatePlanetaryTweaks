@@ -46,6 +46,17 @@ public class ModItems {
     public static final RegistryObject<Item> GUNPOWDER_INFUSED_AMETRINE = ITEMS.register("gunpowder_infused_ametrine",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
 
+    public static final RegistryObject<Item> CRUSHED_VENTIUM_ORE = ITEMS.register("crushed_ventium_ore",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> CRUSHED_HORIZONITE_ORE = ITEMS.register("crushed_horizonite_ore",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> CRUSHED_FALSITE_ORE = ITEMS.register("crushed_falsite_ore",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> CRUSHED_CHAROITE_ORE = ITEMS.register("crushed_charoite_ore",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> CRUSHED_AQUITE_ORE = ITEMS.register("crushed_aquite_ore",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+
 
 
     public static void register (IEventBus eventBus) {
