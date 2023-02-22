@@ -25,5 +25,15 @@
   "item.cd_addon.crushed_horizonite_ore": "Crushed Horizonite Ore",
   "item.cd_addon.crushed_ventium_ore": "Crushed Ventium Ore",
 
+  "item.cd_addon.worm_gu": "Worm Gu",
+
+  "item.cd_addon.knightmetal_wormed_sword": "Knightmetal Wormed Sword",
+
+  "item.cd_addon.knightmetal_wormed_helmet": "Knightmetal Wormed Helmet",
+  "item.cd_addon.knightmetal_wormed_chestplate": "Knightmetal Wormed Chestplate",
+  "item.cd_addon.knightmetal_wormed_leggings": "Knightmetal Wormed Leggings",
+  "item.cd_addon.knightmetal_wormed_boots": "Knightmetal Wormed Boots",
+
+
   "itemGroup.cd_addon_tab": "Create Dimensions Addon"
 }

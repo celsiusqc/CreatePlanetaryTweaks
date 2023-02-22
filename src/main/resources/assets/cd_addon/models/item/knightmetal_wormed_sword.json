@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "cd_addon:item/knightmetal_wormed_sword"
+  }
+}
