@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "cd_addon:item/void_wormed_chestplate"
+  }
+}
