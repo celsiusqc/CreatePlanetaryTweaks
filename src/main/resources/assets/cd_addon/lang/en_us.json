@@ -35,6 +35,11 @@
   "item.cd_addon.void_wormed_leggings": "Void Wormed Leggings",
   "item.cd_addon.void_wormed_boots": "Void Wormed Boots",
 
+  "item.cd_addon.ur_ghast_heart": "Ur Ghast Heart",
+  "item.cd_addon.armored_giant_heart": "Armored Giant Heart",
+  "item.cd_addon.snow_queen_heart": "Snow Queen Heart",
+  "item.cd_addon.compressed_hearts": "Compressed Hearts",
+
 
   "itemGroup.cd_addon_tab": "Create Dimensions Addon"
 }

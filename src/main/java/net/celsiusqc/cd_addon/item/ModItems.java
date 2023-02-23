@@ -65,6 +65,16 @@ public class ModItems {
     public static final RegistryObject<Item> WORM_GU = ITEMS.register("worm_gu",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
 
+    public static final RegistryObject<Item> UR_GHAST_HEART = ITEMS.register("ur_ghast_heart",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> ARMORED_GIANT_HEART = ITEMS.register("armored_giant_heart",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> SNOW_QUEEN_HEART = ITEMS.register("snow_queen_heart",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+    public static final RegistryObject<Item> COMPRESSED_HEARTS = ITEMS.register("compressed_hearts",
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cd_addon)));
+
+
     public static final RegistryObject<SwordItem> VOID_WORM_SWORD = ITEMS.register("void_wormed_sword",
             () -> new SwordItem(ToolTiers.VOID_WORM, 12, -2.4f, props()));
                                                 //Attack DMG Bonus from Base  - Attack Speed float -- Adds to the base of 1attack dmg, 4 attack speed
