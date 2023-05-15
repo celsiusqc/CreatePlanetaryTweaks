@@ -23,6 +23,12 @@
   "item.cp_tweaks.void_wormed_pickaxe": "Void Wormed Pickaxe",
   "item.cp_tweaks.void_wormed_hoe": "Void Wormed Hoe",
 
+  "item.cp_tweaks.desh_sword": "Desh Sword",
+  "item.cp_tweaks.desh_axe": "Desh Axe",
+  "item.cp_tweaks.desh_shovel": "Desh Shovel",
+  "item.cp_tweaks.desh_pickaxe": "Desh Pickaxe",
+  "item.cp_tweaks.desh_hoe": "Desh Hoe",
+
   "item.cp_tweaks.void_wormed_helmet": "Void Wormed Helmet",
   "item.cp_tweaks.void_wormed_chestplate": "Void Wormed Chestplate",
   "item.cp_tweaks.void_wormed_leggings": "Void Wormed Leggings",
@@ -32,6 +38,17 @@
   "item.cp_tweaks.desh_chestplate": "Desh Chestplate",
   "item.cp_tweaks.desh_leggings": "Desh Leggings",
   "item.cp_tweaks.desh_boots": "Desh Boots",
+
+  "item.cp_tweaks.calorite_helmet": "Calorite Helmet",
+  "item.cp_tweaks.calorite_chestplate": "Calorite Chestplate",
+  "item.cp_tweaks.calorite_leggings": "Calorite Leggings",
+  "item.cp_tweaks.calorite_boots": "Calorite Boots",
+
+  "item.cp_tweaks.calorite_sword": "Calorite Sword",
+  "item.cp_tweaks.calorite_axe": "Calorite Axe",
+  "item.cp_tweaks.calorite_shovel": "Calorite Shovel",
+  "item.cp_tweaks.calorite_pickaxe": "Calorite Pickaxe",
+  "item.cp_tweaks.calorite_hoe": "Calorite Hoe",
 
 
   "itemGroup.cp_tweaks_tab": "Create Planetary Tweaks"
