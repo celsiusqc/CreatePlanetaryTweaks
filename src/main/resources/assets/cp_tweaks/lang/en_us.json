@@ -1,0 +1,38 @@
+{
+
+  "item.cp_tweaks.burning": "Burning Icon",
+  "item.cp_tweaks.warm": "Warm Icon",
+  "item.cp_tweaks.comfy": "Comfy Icon",
+  "item.cp_tweaks.cold": "Cold Icon",
+  "item.cp_tweaks.freezing": "Freezing Icon",
+
+  "item.cp_tweaks.autumn": "Autumn Icon",
+  "item.cp_tweaks.dry": "Dry Icon",
+  "item.cp_tweaks.spring": "Spring Icon",
+  "item.cp_tweaks.summer": "Summer Icon",
+  "item.cp_tweaks.wet": "Wet Icon",
+  "item.cp_tweaks.winter": "Winter Icon",
+
+  "item.cp_tweaks.worm_gu": "Worm Gu",
+
+  "item.cp_tweaks.unstable_ice_shard": "Unstable Ice Shard",
+
+  "item.cp_tweaks.void_wormed_sword": "Void Wormed Sword",
+  "item.cp_tweaks.void_wormed_axe": "Void Wormed Axe",
+  "item.cp_tweaks.void_wormed_shovel": "Void Wormed Shovel",
+  "item.cp_tweaks.void_wormed_pickaxe": "Void Wormed Pickaxe",
+  "item.cp_tweaks.void_wormed_hoe": "Void Wormed Hoe",
+
+  "item.cp_tweaks.void_wormed_helmet": "Void Wormed Helmet",
+  "item.cp_tweaks.void_wormed_chestplate": "Void Wormed Chestplate",
+  "item.cp_tweaks.void_wormed_leggings": "Void Wormed Leggings",
+  "item.cp_tweaks.void_wormed_boots": "Void Wormed Boots",
+
+  "item.cp_tweaks.desh_helmet": "Desh Helmet",
+  "item.cp_tweaks.desh_chestplate": "Desh Chestplate",
+  "item.cp_tweaks.desh_leggings": "Desh Leggings",
+  "item.cp_tweaks.desh_boots": "Desh Boots",
+
+
+  "itemGroup.cp_tweaks_tab": "Create Planetary Tweaks"
+}
