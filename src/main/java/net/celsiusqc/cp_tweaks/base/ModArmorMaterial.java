@@ -12,7 +12,7 @@ public record ModArmorMaterial(String name, int durability, int[] protection, in
     private static final int[] DURABILITY_PER_SLOT = new int[] {13, 15, 16, 11};
 
     public int getDurabilityForSlot(EquipmentSlot slot) {
-        return this.durability;
+        return DURABILITY_PER_SLOT[slot.getIndex()] * this.durability;
     }
 
 

@@ -55,7 +55,7 @@ public class ModItems {
         public static final Tier VOID_WORM = new ForgeTier(
                 4,
                 2067,
-                0,
+                10,
                 0,
                 15,
                 null,
@@ -64,8 +64,8 @@ public class ModItems {
         //      DESH TOOL
         public static final Tier DESH_INGOT = new ForgeTier(
                 4,
-                2067,
-                0,
+                2189,
+                10,
                 0,
                 15,
                 null,
@@ -73,8 +73,8 @@ public class ModItems {
 
         public static final Tier CALORITE_INGOT = new ForgeTier(
                 4,
-                2067,
-                0,
+                2354,
+                10,
                 0,
                 15,
                 null,
@@ -88,34 +88,34 @@ public class ModItems {
     public static class ArmorTiers {
         public static final ArmorMaterial VOID_WORM = new ModArmorMaterial(
                 "void_wormed",
-                600,
+                45,
                 new int[] {5, 8, 10, 5},
                 15,
                 SoundEvents.ARMOR_EQUIP_NETHERITE,
-                1.7f,
-                0.12f,
+                1,
+                0,
                 () -> Ingredient.of(ModItems.VOID_WORM_GU.get()));
 
         //Desh
 
         public static final ArmorMaterial DESH_INGOT = new ModArmorMaterial(
                 "desh",
-                600,
-                new int[] {5, 8, 10, 5},
+                51,
+                new int[] {6, 9, 11, 6},
                 15,
                 SoundEvents.ARMOR_EQUIP_NETHERITE,
-                1.7f,
-                0.12f,
+                0,
+                0.3f,
                 () -> Ingredient.of(ModItems.DESH_INGOT));
 
         public static final ArmorMaterial CALORITE_INGOT = new ModArmorMaterial(
                 "calorite",
-                600,
-                new int[] {5, 8, 10, 5},
+                56,
+                new int[] {7, 11, 13, 8},
                 15,
                 SoundEvents.ARMOR_EQUIP_NETHERITE,
-                1.7f,
-                0.12f,
+                0,
+                0.4f,
                 () -> Ingredient.of(ModItems.CALORITE_INGOT));
 
 
@@ -166,27 +166,27 @@ public class ModItems {
 
 
     public static final RegistryObject<SwordItem> DESH_SWORD = ITEMS.register("desh_sword",
-            () -> new SwordItem(ToolTiers.DESH_INGOT, 9, -2.4f, props()));
+            () -> new SwordItem(ToolTiers.DESH_INGOT, 10, -2.4f, props()));
     //Attack DMG Bonus from Base  - Attack Speed float -- Adds to the base of 1attack dmg, 4 attack speed
     public static final RegistryObject<AxeItem> DESH_AXE = ITEMS.register("desh_axe",
-            () -> new AxeItem(ToolTiers.DESH_INGOT, 11, -3.0f, props()));
+            () -> new AxeItem(ToolTiers.DESH_INGOT, 12, -3.0f, props()));
     public static final RegistryObject<ShovelItem> DESH_SHOVEL = ITEMS.register("desh_shovel",
             () -> new ShovelItem(ToolTiers.DESH_INGOT, 6, -3.0f, props()));
     public static final RegistryObject<PickaxeItem> DESH_PICKAXE = ITEMS.register("desh_pickaxe",
-            () -> new PickaxeItem(ToolTiers.DESH_INGOT, 6, -2.8f, props()));
+            () -> new PickaxeItem(ToolTiers.DESH_INGOT, 7, -2.8f, props()));
     public static final RegistryObject<HoeItem> DESH_HOE = ITEMS.register("desh_hoe",
             () -> new HoeItem(ToolTiers.DESH_INGOT, 0, 0.0f, props()));
 
 
     public static final RegistryObject<SwordItem> CALORITE_SWORD = ITEMS.register("calorite_sword",
-            () -> new SwordItem(ToolTiers.CALORITE_INGOT, 9, -2.4f, props()));
+            () -> new SwordItem(ToolTiers.CALORITE_INGOT, 11, -2.4f, props()));
     //Attack DMG Bonus from Base  - Attack Speed float -- Adds to the base of 1attack dmg, 4 attack speed
     public static final RegistryObject<AxeItem> CALORITE_AXE = ITEMS.register("calorite_axe",
-            () -> new AxeItem(ToolTiers.CALORITE_INGOT, 11, -3.0f, props()));
+            () -> new AxeItem(ToolTiers.CALORITE_INGOT, 13, -3.0f, props()));
     public static final RegistryObject<ShovelItem> CALORITE_SHOVEL = ITEMS.register("calorite_shovel",
-            () -> new ShovelItem(ToolTiers.CALORITE_INGOT, 6, -3.0f, props()));
+            () -> new ShovelItem(ToolTiers.CALORITE_INGOT, 7, -3.0f, props()));
     public static final RegistryObject<PickaxeItem> CALORITE_PICKAXE = ITEMS.register("calorite_pickaxe",
-            () -> new PickaxeItem(ToolTiers.CALORITE_INGOT, 6, -2.8f, props()));
+            () -> new PickaxeItem(ToolTiers.CALORITE_INGOT, 8, -2.8f, props()));
     public static final RegistryObject<HoeItem> CALORITE_HOE = ITEMS.register("calorite_hoe",
             () -> new HoeItem(ToolTiers.CALORITE_INGOT, 0, 0.0f, props()));
 
