@@ -1,0 +1,29 @@
+{
+  "forge:conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_pickaxe"
+    },
+    {
+      "item": "cp_tweaks:void_worm_gu"
+    },
+    {
+      "amount": 500,
+      "fluid": "minecraft:lava",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "cp_tweaks:void_wormed_pickaxe"
+    }
+  ]
+}

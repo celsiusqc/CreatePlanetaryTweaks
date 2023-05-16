@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "000",
+    " 1 ",
+    " 1 "
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:ingots/calorite"
+    },
+    "1":{
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "cp_tweaks:calorite_pickaxe",
+    "count": 1
+  }
+}

@@ -2,8 +2,10 @@ package net.celsiusqc.cp_tweaks.item;
 
 import net.celsiusqc.cp_tweaks.CreatePlanetaryTweaks;
 import net.celsiusqc.cp_tweaks.base.ModArmorMaterial;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -17,37 +19,35 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, CreatePlanetaryTweaks.MOD_ID);
-    public static final RegistryObject<Item> BURNING = ITEMS.register("burning",
-            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cp_tweaks)));
-    public static final RegistryObject<Item> WARM = ITEMS.register("warm",
-            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cp_tweaks)));
-    public static final RegistryObject<Item> COMFY = ITEMS.register("comfy",
-            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cp_tweaks)));
-    public static final RegistryObject<Item> COLD = ITEMS.register("cold",
-            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cp_tweaks)));
-    public static final RegistryObject<Item> FREEZING = ITEMS.register("freezing",
-            () -> new Item(new Item.Properties().tab(ModCreativeModTab.cp_tweaks)));
 
     public static final RegistryObject<Item> AUTUMN = ITEMS.register("autumn",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.cp_tweaks)));
+
     public static final RegistryObject<Item> DRY = ITEMS.register("dry",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.cp_tweaks)));
+
     public static final RegistryObject<Item> SPRING = ITEMS.register("spring",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.cp_tweaks)));
+
     public static final RegistryObject<Item> SUMMER = ITEMS.register("summer",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.cp_tweaks)));
+
     public static final RegistryObject<Item> WET = ITEMS.register("wet",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.cp_tweaks)));
+
     public static final RegistryObject<Item> WINTER = ITEMS.register("winter",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.cp_tweaks)));
-    public static final RegistryObject<Item> WORM_GU = ITEMS.register("worm_gu",
+
+    public static final RegistryObject<Item> VOID_WORM_GU = ITEMS.register("void_worm_gu",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.cp_tweaks)));
 
     public static final RegistryObject<Item> UNSTABLE_ICE_SHARD = ITEMS.register("unstable_ice_shard",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.cp_tweaks)));
 
-    public static final RegistryObject<Item> DESH_INGOT = RegistryObject.create(new ResourceLocation("ad_astra:desh_ingot"), ForgeRegistries.ITEMS);
-    public static final RegistryObject<Item> CALORITE_INGOT = RegistryObject.create(new ResourceLocation("ad_astra:calorite_ingot"), ForgeRegistries.ITEMS);
+    //public static final RegistryObject<Item> DESH_INGOT = RegistryObject.create(new ResourceLocation("ad_astra:desh_ingot"), ForgeRegistries.ITEMS);
+
+    public static final TagKey<Item> DESH_INGOT = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("forge:ingots/desh"));
+    public static final TagKey<Item> CALORITE_INGOT = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("forge:ingots/calorite"));
 
 
     //      VOID WORM TOOL
@@ -59,7 +59,7 @@ public class ModItems {
                 0,
                 15,
                 null,
-                () -> Ingredient.of(ModItems.WORM_GU.get()));
+                () -> Ingredient.of(ModItems.VOID_WORM_GU.get()));
 
         //      DESH TOOL
         public static final Tier DESH_INGOT = new ForgeTier(
@@ -69,7 +69,7 @@ public class ModItems {
                 0,
                 15,
                 null,
-                () -> Ingredient.of(ModItems.DESH_INGOT.get()));
+                () -> Ingredient.of(ModItems.DESH_INGOT));
 
         public static final Tier CALORITE_INGOT = new ForgeTier(
                 4,
@@ -78,7 +78,7 @@ public class ModItems {
                 0,
                 15,
                 null,
-                () -> Ingredient.of(ModItems.CALORITE_INGOT.get()));
+                () -> Ingredient.of(ModItems.CALORITE_INGOT));
 
 
     }
@@ -94,7 +94,7 @@ public class ModItems {
                 SoundEvents.ARMOR_EQUIP_NETHERITE,
                 1.7f,
                 0.12f,
-                () -> Ingredient.of(ModItems.WORM_GU.get()));
+                () -> Ingredient.of(ModItems.VOID_WORM_GU.get()));
 
         //Desh
 
@@ -106,7 +106,7 @@ public class ModItems {
                 SoundEvents.ARMOR_EQUIP_NETHERITE,
                 1.7f,
                 0.12f,
-                () -> Ingredient.of(ModItems.DESH_INGOT.get()));
+                () -> Ingredient.of(ModItems.DESH_INGOT));
 
         public static final ArmorMaterial CALORITE_INGOT = new ModArmorMaterial(
                 "calorite",
@@ -116,7 +116,7 @@ public class ModItems {
                 SoundEvents.ARMOR_EQUIP_NETHERITE,
                 1.7f,
                 0.12f,
-                () -> Ingredient.of(ModItems.CALORITE_INGOT.get()));
+                () -> Ingredient.of(ModItems.CALORITE_INGOT));
 
 
 

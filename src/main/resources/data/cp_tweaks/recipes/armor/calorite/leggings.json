@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "000",
+    "0 0",
+    "0 0"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:ingots/calorite"
+    }
+  },
+  "result": {
+    "item": "cp_tweaks:calorite_leggings",
+    "count": 1
+  }
+}

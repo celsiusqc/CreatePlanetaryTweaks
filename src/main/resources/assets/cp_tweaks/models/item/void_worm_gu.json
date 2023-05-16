@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "cp_tweaks:item/worm_gu"
+    "layer0": "cp_tweaks:item/void_worm_gu"
   }
 }

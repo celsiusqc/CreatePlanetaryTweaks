@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 0",
+    "0 0"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:ingots/desh"
+    }
+  },
+  "result": {
+    "item": "cp_tweaks:desh_boots",
+    "count": 1
+  }
+}
