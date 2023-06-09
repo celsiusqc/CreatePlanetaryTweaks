@@ -1,20 +1,36 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "0",
-    "1",
-    "1"
-  ],
-  "key": {
-    "0": {
-      "tag": "forge:ingots/copper"
-    },
-    "1":{
-      "tag": "forge:rods/wooden"
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ingots/copper"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "0",
+          "1",
+          "1"
+        ],
+        "key": {
+          "0": {
+            "tag": "forge:ingots/copper"
+          },
+          "1": {
+            "tag": "forge:rods/wooden"
+          }
+        },
+        "result": {
+          "item": "cp_tweaks:copper_shovel",
+          "count": 1
+        }
+      }
     }
-  },
-  "result": {
-    "item": "cp_tweaks:copper_shovel",
-    "count": 1
-  }
+  ]
 }

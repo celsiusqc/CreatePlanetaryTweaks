@@ -1,16 +1,32 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "0 0",
-    "0 0"
-  ],
-  "key": {
-    "0": {
-      "tag": "forge:ingots/calorite"
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ingots/calorite"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "0 0",
+          "0 0"
+        ],
+        "key": {
+          "0": {
+            "tag": "forge:ingots/calorite"
+          }
+        },
+        "result": {
+          "item": "cp_tweaks:calorite_boots",
+          "count": 1
+        }
+      }
     }
-  },
-  "result": {
-    "item": "cp_tweaks:calorite_boots",
-    "count": 1
-  }
+  ]
 }

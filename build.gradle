@@ -16,7 +16,7 @@ plugins {
 
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.0.6-1.19.2'
+version = '1.0.7-1.19.2'
 group = 'net.celsiusqc.cp_tweaks' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'cp_tweaks'
 
@@ -160,10 +160,10 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.19.2-43.2.11'
     //Blue Skies
-    implementation fg.deobf("curse.maven:blue-skies-312918:3966273")
-    implementation fg.deobf("curse.maven:structure-gel-api-378802:4489756")
+//    implementation fg.deobf("curse.maven:blue-skies-312918:3966273")
+//    implementation fg.deobf("curse.maven:structure-gel-api-378802:4489756")
     //Create
-    implementation fg.deobf("curse.maven:create-328085:4550987")
+//    implementation fg.deobf("curse.maven:create-328085:4550987")
     //JEI & JER
     // compile against the JEI API but do not include it at runtime
     compileOnly(fg.deobf("mezz.jei:jei-1.19.2-common-api:11.5.0.297"))
@@ -172,13 +172,13 @@ dependencies {
     runtimeOnly(fg.deobf("mezz.jei:jei-1.19.2-forge:11.5.0.297"))
     implementation fg.deobf("curse.maven:just-enough-resources-jer-240630:3951643")
     //Ad Astra
-    implementation fg.deobf("curse.maven:ad-astra-635042:4452052")
-    implementation fg.deobf("curse.maven:resourceful-config-714059:4444198")
-    implementation fg.deobf("curse.maven:botarium-704113:4306551")
-    implementation fg.deobf("curse.maven:resourceful-lib-570073:4477753")
+//    implementation fg.deobf("curse.maven:ad-astra-635042:4452052")
+//    implementation fg.deobf("curse.maven:resourceful-config-714059:4444198")
+//    implementation fg.deobf("curse.maven:botarium-704113:4306551")
+//    implementation fg.deobf("curse.maven:resourceful-lib-570073:4477753")
     //Alexsmobs
-    implementation fg.deobf("curse.maven:alexs-mobs-426558:4159154")
-    implementation fg.deobf("curse.maven:citadel-331936:4473243")
+//    implementation fg.deobf("curse.maven:alexs-mobs-426558:4159154")
+//    implementation fg.deobf("curse.maven:citadel-331936:4473243")
 
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
