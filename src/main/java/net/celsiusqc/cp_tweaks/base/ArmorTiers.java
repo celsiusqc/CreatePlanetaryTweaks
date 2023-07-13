@@ -13,7 +13,7 @@ import java.util.EnumMap;
 import java.util.function.Supplier;
 
 public enum ArmorTiers implements ArmorMaterial {
-    VOID_WORM("void_worm", 45, Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+    VOID_WORMED("void_wormed", 45, Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 5);
         map.put(ArmorItem.Type.LEGGINGS, 8);
         map.put(ArmorItem.Type.CHESTPLATE, 10);

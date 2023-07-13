@@ -1,9 +1,6 @@
 package net.celsiusqc.cp_tweaks;
 
-import net.celsiusqc.cp_tweaks.item.ModCreativeModTab;
-import net.celsiusqc.cp_tweaks.item.ModItems;
-import net.celsiusqc.cp_tweaks.item.Tools;
-import net.celsiusqc.cp_tweaks.item.Armor;
+import net.celsiusqc.cp_tweaks.item.*;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -15,10 +12,15 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
+import static javax.swing.text.html.parser.DTDConstants.ID;
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CreatePlanetaryTweaks.MOD_ID)
 public class CreatePlanetaryTweaks {
+
+
     public static final String MOD_ID = "cp_tweaks";
+    public static final String ARMOR_DIR = MOD_ID + ":textures/models/armor/";
 
     public CreatePlanetaryTweaks() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
