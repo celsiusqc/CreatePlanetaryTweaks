@@ -1,8 +1,6 @@
 package net.celsiusqc.cp_tweaks.item;
 
 import net.celsiusqc.cp_tweaks.CreatePlanetaryTweaks;
-//import net.celsiusqc.cp_tweaks.base.ModArmorMaterial;
-import net.celsiusqc.cp_tweaks.base.ArmorTiers;
 import net.celsiusqc.cp_tweaks.base.ModArmorMaterial;
 import net.celsiusqc.cp_tweaks.base.ToolTiers;
 import net.minecraft.network.chat.Component;
@@ -60,22 +58,22 @@ public class ModItems {
 
 
     public static final RegistryObject<ArmorItem> VOID_WORMED_HELMET = ITEMS.register("void_wormed_helmet",
-            () -> new ArmorItem(ArmorTiers.VOID_WORM, ArmorItem.Type.HELMET, new Item.Properties()
+            () -> new ArmorItem(ModArmorMaterial.VOID_WORM, ArmorItem.Type.HELMET, new Item.Properties()
                     .stacksTo(1)
                     .fireResistant()
                     .rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<ArmorItem> VOID_WORMED_CHESTPLATE = ITEMS.register("void_wormed_chestplate",
-            () -> new ArmorItem(ArmorTiers.VOID_WORM, ArmorItem.Type.CHESTPLATE, new Item.Properties()
+            () -> new ArmorItem(ModArmorMaterial.VOID_WORM, ArmorItem.Type.CHESTPLATE, new Item.Properties()
                     .stacksTo(1)
                     .fireResistant()
                     .rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<ArmorItem> VOID_WORMED_LEGGINGS = ITEMS.register("void_wormed_leggings",
-            () -> new ArmorItem(ArmorTiers.VOID_WORM, ArmorItem.Type.LEGGINGS, new Item.Properties()
+            () -> new ArmorItem(ModArmorMaterial.VOID_WORM, ArmorItem.Type.LEGGINGS, new Item.Properties()
                     .stacksTo(1)
                     .fireResistant()
                     .rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<ArmorItem> VOID_WORMED_BOOTS = ITEMS.register("void_wormed_boots",
-            () -> new ArmorItem(ArmorTiers.VOID_WORM, ArmorItem.Type.BOOTS, new Item.Properties()
+            () -> new ArmorItem(ModArmorMaterial.VOID_WORM, ArmorItem.Type.BOOTS, new Item.Properties()
                     .stacksTo(1)
                     .fireResistant()
                     .rarity(Rarity.UNCOMMON)));

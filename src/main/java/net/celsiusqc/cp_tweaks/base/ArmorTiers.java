@@ -1,3 +1,4 @@
+/*
 package net.celsiusqc.cp_tweaks.base;
 
 import net.celsiusqc.cp_tweaks.item.ModItems;
@@ -42,3 +43,4 @@ public class ArmorTiers {
 
 
 }
+*/
