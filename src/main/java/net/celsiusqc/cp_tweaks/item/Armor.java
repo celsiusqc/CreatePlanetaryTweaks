@@ -12,6 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class Armor {
 
+    //Void Worm
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, CreatePlanetaryTweaks.MOD_ID);
     public static final RegistryObject<ArmorItem> VOID_WORMED_HELMET = ITEMS.register("void_wormed_helmet",
@@ -35,6 +36,7 @@ public class Armor {
                     .fireResistant()
                     .rarity(Rarity.UNCOMMON)));
 
+    //Desh
     public static final RegistryObject<ArmorItem> DESH_HELMET = ITEMS.register("desh_helmet",
             () -> new ArmorItem(ArmorTiers.DESH, ArmorItem.Type.HELMET, new Item.Properties()
                     .stacksTo(1)
@@ -56,6 +58,7 @@ public class Armor {
                     .fireResistant()
                     .rarity(Rarity.UNCOMMON)));
 
+    //Calorite
     public static final RegistryObject<ArmorItem> CALORITE_HELMET = ITEMS.register("calorite_helmet",
             () -> new ArmorItem(ArmorTiers.CALORITE, ArmorItem.Type.HELMET, new Item.Properties()
                     .stacksTo(1)
@@ -76,6 +79,29 @@ public class Armor {
                     .stacksTo(1)
                     .fireResistant()
                     .rarity(Rarity.UNCOMMON)));
+
+    //Ostrum
+    public static final RegistryObject<ArmorItem> OSTRUM_HELMET = ITEMS.register("ostrum_helmet",
+            () -> new ArmorItem(ArmorTiers.OSTRUM, ArmorItem.Type.HELMET, new Item.Properties()
+                    .stacksTo(1)
+                    .fireResistant()
+                    .rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<ArmorItem> OSTRUM_CHESTPLATE = ITEMS.register("ostrum_chestplate",
+            () -> new ArmorItem(ArmorTiers.OSTRUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()
+                    .stacksTo(1)
+                    .fireResistant()
+                    .rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<ArmorItem> OSTRUM_LEGGINGS = ITEMS.register("ostrum_leggings",
+            () -> new ArmorItem(ArmorTiers.OSTRUM, ArmorItem.Type.LEGGINGS, new Item.Properties()
+                    .stacksTo(1)
+                    .fireResistant()
+                    .rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<ArmorItem> OSTRUM_BOOTS = ITEMS.register("ostrum_boots",
+            () -> new ArmorItem(ArmorTiers.OSTRUM, ArmorItem.Type.BOOTS, new Item.Properties()
+                    .stacksTo(1)
+                    .fireResistant()
+                    .rarity(Rarity.UNCOMMON)));
+
 
     public static void register (IEventBus eventBus) {
         ITEMS.register(eventBus);

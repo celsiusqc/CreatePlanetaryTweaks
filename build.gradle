@@ -220,6 +220,14 @@ dependencies {
     //Serene Seasons
     implementation fg.deobf("curse.maven:serene-seasons-291874:4611121")
 
+    //Rubidium & Oculus
+    implementation fg.deobf("curse.maven:rubidium-574856:4573226")
+    implementation fg.deobf("curse.maven:oculus-581495:4578741")
+
+    //Blur Mod
+    /*implementation fg.deobf("curse.maven:blur-forge-823106:4631831")
+    implementation fg.deobf("curse.maven:cloth-config-348521:4633444")*/
+
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime

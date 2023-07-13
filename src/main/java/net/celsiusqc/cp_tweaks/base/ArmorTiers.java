@@ -32,7 +32,14 @@ public enum ArmorTiers implements ArmorMaterial {
         map.put(ArmorItem.Type.LEGGINGS, 11);
         map.put(ArmorItem.Type.CHESTPLATE, 13);
         map.put(ArmorItem.Type.HELMET, 8);
-    }), 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.2F, 0.12F, () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/calorite"))));
+    }), 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.2F, 0.12F, () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/calorite")))),
+
+    OSTRUM("ostrum", 56, Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+        map.put(ArmorItem.Type.BOOTS, 8);
+        map.put(ArmorItem.Type.LEGGINGS, 12);
+        map.put(ArmorItem.Type.CHESTPLATE, 14);
+        map.put(ArmorItem.Type.HELMET, 9);
+    }), 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.4F, 0.14F, () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/ostrum"))));
 
     private static final EnumMap<ArmorItem.Type, Integer> HEALTH_FUNCTION_FOR_TYPE = Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266653_) -> {
         p_266653_.put(ArmorItem.Type.BOOTS, 13);

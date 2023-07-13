@@ -13,16 +13,16 @@ public class Tools {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, CreatePlanetaryTweaks.MOD_ID);
     public static final RegistryObject<SwordItem> VOID_WORM_SWORD = ITEMS.register("void_wormed_sword",
-            () -> new SwordItem(ToolTiers.VOID_WORM, 3, -2.4f, new Item.Properties()));
+            () -> new SwordItem(ToolTiers.VOID_WORMED, 3, -2.4f, new Item.Properties()));
     //Attack DMG Bonus from Base  - Attack Speed float -- Adds to the base of 1attack dmg, 4 attack speed
     public static final RegistryObject<AxeItem> VOID_WORM_AXE = ITEMS.register("void_wormed_axe",
-            () -> new AxeItem(ToolTiers.VOID_WORM, 5, -3.0f, new Item.Properties()));
+            () -> new AxeItem(ToolTiers.VOID_WORMED, 5, -3.0f, new Item.Properties()));
     public static final RegistryObject<PickaxeItem> VOID_WORM_PICKAXE = ITEMS.register("void_wormed_pickaxe",
-            () -> new PickaxeItem(ToolTiers.VOID_WORM, 0, -2.8f, new Item.Properties()));
+            () -> new PickaxeItem(ToolTiers.VOID_WORMED, 0, -2.8f, new Item.Properties()));
     public static final RegistryObject<ShovelItem> VOID_WORM_SHOVEL = ITEMS.register("void_wormed_shovel",
-            () -> new ShovelItem(ToolTiers.VOID_WORM, 0, -3.0f, new Item.Properties()));
+            () -> new ShovelItem(ToolTiers.VOID_WORMED, 0, -3.0f, new Item.Properties()));
     public static final RegistryObject<HoeItem> VOID_WORM_HOE = ITEMS.register("void_wormed_hoe",
-            () -> new HoeItem(ToolTiers.VOID_WORM, -6, 0.0f, new Item.Properties()));
+            () -> new HoeItem(ToolTiers.VOID_WORMED, -6, 0.0f, new Item.Properties()));
 
 
     public static final RegistryObject<SwordItem> DESH_SWORD = ITEMS.register("desh_sword",
@@ -49,6 +49,18 @@ public class Tools {
             () -> new ShovelItem(ToolTiers.CALORITE, -1, -3.0f, new Item.Properties()));
     public static final RegistryObject<HoeItem> CALORITE_HOE = ITEMS.register("calorite_hoe",
             () -> new HoeItem(ToolTiers.CALORITE, -8, 0.0f, new Item.Properties()));
+
+    public static final RegistryObject<SwordItem> OSTRUM_SWORD = ITEMS.register("ostrum_sword",
+            () -> new SwordItem(ToolTiers.OSTRUM, 3, -2.4f, new Item.Properties()));
+    //Attack DMG Bonus from Base  - Attack Speed float -- Adds to the base of 1attack dmg, 4 attack speed
+    public static final RegistryObject<AxeItem> OSTRUM_AXE = ITEMS.register("ostrum_axe",
+            () -> new AxeItem(ToolTiers.OSTRUM, 5, -3.0f, new Item.Properties()));
+    public static final RegistryObject<PickaxeItem> OSTRUM_PICKAXE = ITEMS.register("ostrum_pickaxe",
+            () -> new PickaxeItem(ToolTiers.OSTRUM, 0, -2.8f, new Item.Properties()));
+    public static final RegistryObject<ShovelItem> OSTRUM_SHOVEL = ITEMS.register("ostrum_shovel",
+            () -> new ShovelItem(ToolTiers.OSTRUM, -1, -3.0f, new Item.Properties()));
+    public static final RegistryObject<HoeItem> OSTRUM_HOE = ITEMS.register("ostrum_hoe",
+            () -> new HoeItem(ToolTiers.OSTRUM, -9, 0.0f, new Item.Properties()));
 
     public static final RegistryObject<SwordItem> STEEL_SWORD = ITEMS.register("steel_sword",
             () -> new SwordItem(ToolTiers.STEEL, 3, -2.4f, new Item.Properties()));

@@ -10,7 +10,7 @@ import net.minecraftforge.common.ForgeTier;
 public class ToolTiers {
 
         //Void Worm
-        public static final Tier VOID_WORM = new ForgeTier(
+        public static final Tier VOID_WORMED = new ForgeTier(
                 4,
                 2067,
                 10,
@@ -38,6 +38,16 @@ public class ToolTiers {
                 15,
                 null,
                 () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/calorite"))));
+
+        //Calorite
+        public static final Tier OSTRUM = new ForgeTier(
+                4,
+                2414,
+                10,
+                9,
+                15,
+                null,
+                () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/ostrum"))));
 
         //Steel
         public static final Tier STEEL = new ForgeTier(

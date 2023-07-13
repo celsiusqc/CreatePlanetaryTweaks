@@ -85,6 +85,16 @@ public class ModCreativeModTab {
                         if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Armor.CALORITE_LEGGINGS.get()); }
                         if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Armor.CALORITE_BOOTS.get()); }
 
+                        if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Tools.OSTRUM_AXE.get()); }
+                        if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Tools.OSTRUM_SWORD.get()); }
+                        if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Tools.OSTRUM_PICKAXE.get()); }
+                        if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Tools.OSTRUM_SHOVEL.get()); }
+                        if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Tools.OSTRUM_HOE.get()); }
+                        if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Armor.OSTRUM_HELMET.get()); }
+                        if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Armor.OSTRUM_CHESTPLATE.get()); }
+                        if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Armor.OSTRUM_LEGGINGS.get()); }
+                        if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Armor.OSTRUM_BOOTS.get()); }
+
                     })
                     .build());
 
