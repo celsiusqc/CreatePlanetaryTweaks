@@ -1,24 +1,21 @@
 {
   "type": "forge:conditional",
-
   "recipes": [
     {
-
       "conditions": [
-
         {
           "type": "forge:mod_loaded",
-          "modid": "serene_seasons"
+          "modid": "sereneseasons"
         }
       ],
       "recipe": {
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "tag": "minecraft:saplings"
-  },
-  "result": "cp_tweaks:dry"
-}
+        "type": "minecraft:stonecutting",
+        "count": 1,
+        "ingredient": {
+          "tag": "minecraft:saplings"
+        },
+        "result": "cp_tweaks:dry"
+      }
     }
   ]
 }

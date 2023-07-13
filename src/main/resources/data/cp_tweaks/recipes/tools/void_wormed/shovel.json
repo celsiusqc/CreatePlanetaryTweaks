@@ -1,33 +1,40 @@
 {
-  "forge:conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "create"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "alexsmobs"
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "alexsmobs"
+        }
+      ],
+      "recipe": {
+        "type": "create:mixing",
+        "heatRequirement": "superheated",
+        "ingredients": [
+          {
+            "item": "minecraft:golden_shovel"
+          },
+          {
+            "item": "cp_tweaks:void_worm_gu"
+          },
+          {
+            "amount": 500,
+            "fluid": "minecraft:lava",
+            "nbt": {}
+          }
+        ],
+        "results": [
+          {
+            "count": 1,
+            "item": "cp_tweaks:void_wormed_shovel"
+          }
+        ]
+      }
     }
-  ],
-  "type": "create:mixing",
-  "heatRequirement": "superheated",
-  "ingredients": [
-    {
-      "item": "minecraft:golden_shovel"
-    },
-    {
-      "item": "cp_tweaks:void_worm_gu"
-    },
-    {
-      "amount": 500,
-      "fluid": "minecraft:lava",
-      "nbt": {}
-    }
-  ],
-  "results": [
-    {
-      "count": 1,
-      "item": "cp_tweaks:void_wormed_shovel"
-    }
-  ]
+    ]
 }

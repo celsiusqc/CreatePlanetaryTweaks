@@ -1,46 +1,52 @@
 {
-  "forge:conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-    "type": "forge:mod_loaded",
-    "modid": "ad_astra"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "create"
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        }
+      ],
+      "recipe": {
+        "type": "create:crushing",
+        "ingredients": [
+          {
+            "item": "ad_astra:glacio_ice_shard_ore"
+          }
+        ],
+        "results": [
+          {
+            "item": "ad_astra:ice_shard",
+            "count": 1
+          },
+          {
+            "item": "ad_astra:ice_shard",
+            "count": 1,
+            "chance": 0.25
+          },
+          {
+            "item": "ad_astra:glacio_cobblestone",
+            "count": 1,
+            "chance": 0.12
+          },
+          {
+            "item": "cp_tweaks:unstable_ice_shard",
+            "count": 1,
+            "chance": 0.02
+          },
+          {
+            "item": "create:experience_nugget",
+            "count": 1,
+            "chance": 0.05
+          }
+        ],
+        "processingTime": 300
+      }
     }
-  ],
-
-  "type": "create:crushing",
-  "ingredients": [
-    {
-      "item": "ad_astra:glacio_ice_shard_ore"
-    }
-  ],
-  "results": [
-    {
-      "item": "ad_astra:ice_shard",
-      "count": 1
-    },
-    {
-      "item": "ad_astra:ice_shard",
-      "count": 1,
-      "chance": 0.25
-    },
-    {
-      "item": "ad_astra:glacio_cobblestone",
-      "count": 1,
-      "chance": 0.12
-    },
-    {
-      "item": "cp_tweaks:unstable_ice_shard",
-      "count": 1,
-      "chance": 0.02
-    },
-    {
-      "item": "create:experience_nugget",
-      "count": 1,
-      "chance": 0.05
-    }
-  ],
-  "processingTime": 300
+  ]
 }

@@ -8,6 +8,8 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
 
 public class ToolTiers {
+
+        //Void Worm
         public static final Tier VOID_WORM = new ForgeTier(
                 4,
                 2067,
@@ -17,7 +19,7 @@ public class ToolTiers {
                 null,
                 () -> Ingredient.of(ModItems.VOID_WORM_GU.get()));
 
-        //      DESH TOOL
+        //Desh
         public static final Tier DESH = new ForgeTier(
                 4,
                 2189,
@@ -27,6 +29,7 @@ public class ToolTiers {
                 null,
                 () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/desh"))));
 
+        //Calorite
         public static final Tier CALORITE = new ForgeTier(
                 4,
                 2354,
@@ -56,6 +59,7 @@ public class ToolTiers {
                 null,
                 () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/brass"))));
 
+        //Zinc
         public static final Tier ZINC = new ForgeTier(
                 2,
                 250,
@@ -65,6 +69,7 @@ public class ToolTiers {
                 null,
                 () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/zinc"))));
 
+        //Copper
         public static final Tier COPPER = new ForgeTier(
                 2,
                 131,

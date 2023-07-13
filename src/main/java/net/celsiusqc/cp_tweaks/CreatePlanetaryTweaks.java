@@ -1,8 +1,9 @@
 package net.celsiusqc.cp_tweaks;
 
-import com.mojang.logging.LogUtils;
 import net.celsiusqc.cp_tweaks.item.ModCreativeModTab;
 import net.celsiusqc.cp_tweaks.item.ModItems;
+import net.celsiusqc.cp_tweaks.item.Tools;
+import net.celsiusqc.cp_tweaks.item.Armor;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -13,8 +14,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-
-import java.util.logging.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CreatePlanetaryTweaks.MOD_ID)
@@ -27,12 +26,17 @@ public class CreatePlanetaryTweaks {
         ModCreativeModTab.register(modEventBus);
 
         ModItems.register(modEventBus);
+        Tools.register(modEventBus);
+        Armor.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
     }
+
+
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 

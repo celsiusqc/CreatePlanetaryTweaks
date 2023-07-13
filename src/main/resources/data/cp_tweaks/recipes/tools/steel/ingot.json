@@ -1,24 +1,44 @@
 {
-  "type": "create:mixing",
-  "heatRequirement": "heated",
-  "ingredients": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "tag": "minecraft:coals"
-    },
-    {
-      "tag": "minecraft:coals"
-    },
-    {
-      "tag": "minecraft:coals"
-    },
-    {
-      "tag": "forge:ingots/iron"
-    }
-  ],
-  "results": [
-    {
-      "count": 1,
-      "item": "cp_tweaks:steel_ingot"
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "alloyed"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "create:mixing",
+        "heatRequirement": "heated",
+        "ingredients": [
+          {
+            "tag": "minecraft:coals"
+          },
+          {
+            "tag": "minecraft:coals"
+          },
+          {
+            "tag": "minecraft:coals"
+          },
+          {
+            "tag": "forge:ingots/iron"
+          }
+        ],
+        "results": [
+          {
+            "count": 1,
+            "item": "cp_tweaks:steel_ingot"
+          }
+        ]
+      }
     }
   ]
 }

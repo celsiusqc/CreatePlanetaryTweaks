@@ -213,6 +213,13 @@ dependencies {
     //Create
     implementation fg.deobf("curse.maven:create-328085:4626108")
 
+    //Alexsmobs
+    implementation fg.deobf("curse.maven:alexs-mobs-426558:4618074")
+    implementation fg.deobf("curse.maven:citadel-331936:4613231")
+
+    //Serene Seasons
+    implementation fg.deobf("curse.maven:serene-seasons-291874:4611121")
+
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
