@@ -224,6 +224,12 @@ dependencies {
     implementation fg.deobf("curse.maven:rubidium-574856:4573226")
     implementation fg.deobf("curse.maven:oculus-581495:4578741")
 
+    //Consecration
+    implementation fg.deobf("curse.maven:consecration-284001:4638141")
+
+    //CraftTweaker
+    implementation fg.deobf("curse.maven:crafttweaker-239197:4640784")
+
 
     //Blur Mod
     /*implementation fg.deobf("curse.maven:blur-forge-823106:4631831")

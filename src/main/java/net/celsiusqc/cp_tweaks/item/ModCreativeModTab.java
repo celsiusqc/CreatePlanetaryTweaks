@@ -28,6 +28,12 @@ public class ModCreativeModTab {
                         if (ModList.get().isLoaded("sereneseasons")) { pOutput.accept(ModItems.DRY.get()); }
                         if (ModList.get().isLoaded("sereneseasons")) { pOutput.accept(ModItems.WET.get()); }
 
+                        if (ModList.get().isLoaded("ad_astra") && ModList.get().isLoaded("disabled")) { pOutput.accept(Tools.DESH_TIPPED_STONE_AXE.get()); }
+                        if (ModList.get().isLoaded("ad_astra") && ModList.get().isLoaded("disabled")) { pOutput.accept(Tools.DESH_TIPPED_STONE_SWORD.get()); }
+                        if (ModList.get().isLoaded("ad_astra") && ModList.get().isLoaded("disabled")) { pOutput.accept(Tools.DESH_TIPPED_STONE_PICKAXE.get()); }
+                        if (ModList.get().isLoaded("ad_astra") && ModList.get().isLoaded("disabled")) { pOutput.accept(Tools.DESH_TIPPED_STONE_SHOVEL.get()); }
+                        if (ModList.get().isLoaded("ad_astra") && ModList.get().isLoaded("disabled")) { pOutput.accept(Tools.DESH_TIPPED_STONE_HOE.get()); }
+
                         if (!ModList.get().isLoaded("create_sa")) { pOutput.accept(Tools.COPPER_AXE.get()); }
                         if (!ModList.get().isLoaded("create_sa")) { pOutput.accept(Tools.COPPER_SWORD.get()); }
                         if (!ModList.get().isLoaded("create_sa")) { pOutput.accept(Tools.COPPER_PICKAXE.get()); }
@@ -40,18 +46,18 @@ public class ModCreativeModTab {
                         if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.ZINC_SHOVEL.get()); }
                         if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.ZINC_HOE.get()); }
 
+                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.BRASS_AXE.get()); }
+                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.BRASS_SWORD.get()); }
+                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.BRASS_PICKAXE.get()); }
+                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.BRASS_SHOVEL.get()); }
+                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.BRASS_HOE.get()); }
+
                         if (!ModList.get().isLoaded("alloyed")) { pOutput.accept(ModItems.STEEL_INGOT.get()); }
                         if (!ModList.get().isLoaded("alloyed")) { pOutput.accept(Tools.STEEL_AXE.get()); }
                         if (!ModList.get().isLoaded("alloyed")) { pOutput.accept(Tools.STEEL_SWORD.get()); }
                         if (!ModList.get().isLoaded("alloyed")) { pOutput.accept(Tools.STEEL_PICKAXE.get()); }
                         if (!ModList.get().isLoaded("alloyed")) { pOutput.accept(Tools.STEEL_SHOVEL.get()); }
                         if (!ModList.get().isLoaded("alloyed")) { pOutput.accept(Tools.STEEL_HOE.get()); }
-
-                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.BRASS_AXE.get()); }
-                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.BRASS_SWORD.get()); }
-                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.BRASS_PICKAXE.get()); }
-                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.BRASS_SHOVEL.get()); }
-                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.BRASS_HOE.get()); }
 
 
                         if (ModList.get().isLoaded("create") && ModList.get().isLoaded("alexsmobs")) {pOutput.accept(ModItems.VOID_WORM_GU.get());}

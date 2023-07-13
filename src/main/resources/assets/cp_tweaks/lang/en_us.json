@@ -1,5 +1,7 @@
 {
 
+  "item.cp_tweaks.autumn.desc": "Rare drop from rats",
+
   "item.cp_tweaks.burning": "Burning Icon",
   "item.cp_tweaks.warm": "Warm Icon",
   "item.cp_tweaks.comfy": "Comfy Icon",
@@ -12,6 +14,18 @@
   "item.cp_tweaks.summer": "Summer Icon",
   "item.cp_tweaks.wet": "Wet Icon",
   "item.cp_tweaks.winter": "Winter Icon",
+
+  "item.cp_tweaks.copper_sword": "Copper Sword",
+  "item.cp_tweaks.copper_axe": "Copper Axe",
+  "item.cp_tweaks.copper_shovel": "Copper Shovel",
+  "item.cp_tweaks.copper_pickaxe": "Copper Pickaxe",
+  "item.cp_tweaks.copper_hoe": "Copper Hoe",
+
+  "item.cp_tweaks.desh_tipped_stone_sword": "Desh Tipped Stone Sword",
+  "item.cp_tweaks.desh_tipped_stone_axe": "Desh Tipped Stone Axe",
+  "item.cp_tweaks.desh_tipped_stone_shovel": "Desh Tipped Stone Shovel",
+  "item.cp_tweaks.desh_tipped_stone_pickaxe": "Desh Tipped Stone Pickaxe",
+  "item.cp_tweaks.desh_tipped_stone_hoe": "Desh Tipped Stone Hoe",
 
   "item.cp_tweaks.void_worm_gu": "Void Worm Gu",
   "item.cp_tweaks.steel_ingot": "Steel Ingot",
@@ -80,11 +94,7 @@
   "item.cp_tweaks.zinc_pickaxe": "Zinc Pickaxe",
   "item.cp_tweaks.zinc_hoe": "Zinc Hoe",
 
-  "item.cp_tweaks.copper_sword": "Copper Sword",
-  "item.cp_tweaks.copper_axe": "Copper Axe",
-  "item.cp_tweaks.copper_shovel": "Copper Shovel",
-  "item.cp_tweaks.copper_pickaxe": "Copper Pickaxe",
-  "item.cp_tweaks.copper_hoe": "Copper Hoe",
+
 
 
   "creativetab.cp_tweaks_tab": "Create Planetary Tweaks"
