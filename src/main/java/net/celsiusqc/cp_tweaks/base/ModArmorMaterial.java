@@ -1,10 +1,17 @@
+
 package net.celsiusqc.cp_tweaks.base;
 
 import net.celsiusqc.cp_tweaks.CreatePlanetaryTweaks;
+import net.celsiusqc.cp_tweaks.item.ModItems;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
@@ -21,22 +28,32 @@ public record ModArmorMaterial(String name, int durability, int[] protection, in
     }
 
 
+    @Override
+    public int getDurabilityForType(ArmorItem.@NotNull Type pType) {
+        return 0;
+    }
+
+    @Override
+    public int getDefenseForType(ArmorItem.@NotNull Type pType) {
+        return 0;
+    }
+
     public int getEnchantmentValue() {
         return this.enchantability;
     }
 
 
-    public SoundEvent getEquipSound() {
+    public @NotNull SoundEvent getEquipSound() {
         return this.equipSound;
     }
 
 
-    public Ingredient getRepairIngredient() {
+    public @NotNull Ingredient getRepairIngredient() {
         return this.repairMaterial.get();
     }
 
 
-    public String getName() {
+    public @NotNull String getName() {
         return CreatePlanetaryTweaks.MOD_ID + ":" + this.name;
     }
 
