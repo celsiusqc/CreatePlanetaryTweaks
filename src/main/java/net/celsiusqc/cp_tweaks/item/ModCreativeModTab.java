@@ -40,11 +40,11 @@ public class ModCreativeModTab {
                         if (!ModList.get().isLoaded("create_sa")) { pOutput.accept(Tools.COPPER_SHOVEL.get()); }
                         if (!ModList.get().isLoaded("create_sa")) { pOutput.accept(Tools.COPPER_HOE.get()); }
 
-                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.ZINC_AXE.get()); }
-                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.ZINC_SWORD.get()); }
-                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.ZINC_PICKAXE.get()); }
-                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.ZINC_SHOVEL.get()); }
-                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.ZINC_HOE.get()); }
+                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(ZincTools.ZINC_AXE.get()); }
+                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(ZincTools.ZINC_SWORD.get()); }
+                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(ZincTools.ZINC_PICKAXE.get()); }
+                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(ZincTools.ZINC_SHOVEL.get()); }
+                        if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(ZincTools.ZINC_HOE.get()); }
 
                         if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.BRASS_AXE.get()); }
                         if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.BRASS_SWORD.get()); }

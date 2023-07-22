@@ -30,6 +30,7 @@ public class CreatePlanetaryTweaks {
         ModItems.register(modEventBus);
         Tools.register(modEventBus);
         Armor.register(modEventBus);
+        ZincTools.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);

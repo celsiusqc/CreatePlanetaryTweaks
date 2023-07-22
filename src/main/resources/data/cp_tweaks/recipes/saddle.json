@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "forge:leather"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "R": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "R#R",
+    "#I#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "item": "minecraft:saddle"
+  }
+}

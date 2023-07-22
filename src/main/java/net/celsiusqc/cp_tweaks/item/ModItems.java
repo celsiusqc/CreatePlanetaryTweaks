@@ -1,20 +1,11 @@
 package net.celsiusqc.cp_tweaks.item;
-
 import net.celsiusqc.cp_tweaks.CreatePlanetaryTweaks;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import javax.annotation.Nullable;
-import java.util.List;
-import java.util.logging.Level;
 
 
 public class ModItems {
