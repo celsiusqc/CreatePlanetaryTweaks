@@ -52,7 +52,7 @@ public class ModCreativeModTab {
                         if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.BRASS_SHOVEL.get()); }
                         if (ModList.get().isLoaded("create") &&(!ModList.get().isLoaded("create_sa"))) { pOutput.accept(Tools.BRASS_HOE.get()); }
 
-                        if (!ModList.get().isLoaded("alloyed")) { pOutput.accept(ModItems.STEEL_INGOT.get()); }
+                        if (!ModList.get().isLoaded("alloyed") &&(!ModList.get().isLoaded("ad_astra"))) { pOutput.accept(ModItems.STEEL_INGOT.get()); }
                         if (!ModList.get().isLoaded("alloyed")) { pOutput.accept(Tools.STEEL_AXE.get()); }
                         if (!ModList.get().isLoaded("alloyed")) { pOutput.accept(Tools.STEEL_SWORD.get()); }
                         if (!ModList.get().isLoaded("alloyed")) { pOutput.accept(Tools.STEEL_PICKAXE.get()); }
@@ -100,6 +100,8 @@ public class ModCreativeModTab {
                         if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Armor.OSTRUM_CHESTPLATE.get()); }
                         if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Armor.OSTRUM_LEGGINGS.get()); }
                         if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Armor.OSTRUM_BOOTS.get()); }
+
+
 
                     })
                     .build());

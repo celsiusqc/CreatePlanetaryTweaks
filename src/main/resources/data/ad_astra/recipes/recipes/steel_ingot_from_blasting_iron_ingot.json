@@ -8,18 +8,8 @@
           "modid": "create"
         },
         {
-          "type": "forge:not",
-          "value": {
-            "type": "forge:mod_loaded",
-            "modid": "alloyed"
-          }
-        },
-        {
-          "type": "forge:not",
-          "value": {
-            "type": "forge:mod_loaded",
-            "modid": "ad_astra"
-          }
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
         }
       ],
       "recipe": {
