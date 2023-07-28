@@ -1,0 +1,97 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "cataclysm"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        }
+      ],
+      "recipe": {
+        "type": "ad_astra:nasa_workbench",
+        "ingredients": [
+          {
+            "ingredient": {
+              "item": "cp_tweaks:imbued_rocket_nose_cone"
+            }
+          },
+          {
+            "ingredient": {
+              "item": "cataclysm:void_stone"
+            }
+          },
+          {
+            "ingredient": {
+              "item": "cataclysm:void_stone"
+            }
+          },
+          {
+            "ingredient": {
+              "item": "cataclysm:void_stone"
+            }
+          },
+          {
+            "ingredient": {
+              "item": "cataclysm:void_stone"
+            }
+          },
+          {
+            "ingredient": {
+              "item": "cataclysm:void_stone"
+            }
+          },
+          {
+            "ingredient": {
+              "item": "cataclysm:void_stone"
+            }
+          },
+          {
+            "ingredient": {
+              "item": "cp_tweaks:reinforced_rocket_fin"
+            }
+          },
+          {
+            "ingredient": {
+              "item": "ad_astra:ostrum_tank"
+            }
+          },
+          {
+            "ingredient": {
+              "item": "ad_astra:ostrum_tank"
+            }
+          },
+          {
+            "ingredient": {
+              "item": "cp_tweaks:reinforced_rocket_fin"
+            }
+          },
+          {
+            "ingredient": {
+              "item": "cp_tweaks:reinforced_rocket_fin"
+            }
+          },
+          {
+            "ingredient": {
+              "item": "ad_astra:ostrum_engine"
+            }
+          },
+          {
+            "ingredient": {
+              "item": "cp_tweaks:reinforced_rocket_fin"
+            }
+          }
+        ],
+        "output": "ad_astra:tier_3_rocket"
+      }
+    }
+  ]
+}

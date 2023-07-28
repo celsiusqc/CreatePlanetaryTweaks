@@ -1,6 +1,7 @@
 {
   "replace": false,
   "entries": [
-    "cp_tweaks:void_worm_gu"
+    "cp_tweaks:void_worm_gu",
+    "cp_tweaks:heart_of_the_monstrosity"
   ]
 }

@@ -102,7 +102,12 @@ public class ModCreativeModTab {
                         if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Armor.OSTRUM_BOOTS.get()); }
 
                         if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(ModItems.REINFORCED_ROCKET_FIN.get()); }
-                        if (ModList.get().isLoaded("cataclysm")) { pOutput.accept(ModItems.IGNITIUM_SHEET.get()); }
+                        if (ModList.get().isLoaded("cataclysm") && ModList.get().isLoaded("create")) { pOutput.accept(ModItems.IGNITIUM_SHEET.get()); }
+                        if (ModList.get().isLoaded("cataclysm") && ModList.get().isLoaded("create") && ModList.get().isLoaded("ad_astra")) { pOutput.accept(ModItems.IGNITIUM_ENGINE.get()); }
+                        if (ModList.get().isLoaded("cataclysm")) { pOutput.accept(ModItems.HEART_OF_THE_MONSTROSITY.get()); }
+                        if (ModList.get().isLoaded("cataclysm") && ModList.get().isLoaded("create")) { pOutput.accept(ModItems.MONSTROSITY_HEART_GU.get()); }
+                        if (ModList.get().isLoaded("cataclysm") && ModList.get().isLoaded("create") && ModList.get().isLoaded("ad_astra")) { pOutput.accept(ModItems.IMBUED_ROCKET_NOSE_CONE.get()); }
+
 
 
 

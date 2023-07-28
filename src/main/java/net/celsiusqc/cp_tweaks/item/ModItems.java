@@ -45,6 +45,16 @@ public class ModItems {
 
     public static final RegistryObject<Item> IGNITIUM_SHEET = ITEMS.register("ignitium_sheet",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IGNITIUM_ENGINE = ITEMS.register("ignitium_engine",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> HEART_OF_THE_MONSTROSITY = ITEMS.register("heart_of_the_monstrosity",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MONSTROSITY_HEART_GU = ITEMS.register("monstrosity_heart_gu",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> IMBUED_ROCKET_NOSE_CONE = ITEMS.register("imbued_rocket_nose_cone",
+            () -> new Item(new Item.Properties()));
 
 
 

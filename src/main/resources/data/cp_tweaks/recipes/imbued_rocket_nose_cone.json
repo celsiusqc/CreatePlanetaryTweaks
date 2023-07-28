@@ -9,6 +9,10 @@
         },
         {
           "type": "forge:mod_loaded",
+          "modid": "cataclysm"
+        },
+        {
+          "type": "forge:mod_loaded",
           "modid": "create"
         }
       ],
@@ -16,25 +20,22 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "item": "cp_tweaks:void_worm_gu"
+      "item": "ad_astra:rocket_nose_cone"
     },
     {
-      "item": "ad_astra:rocket_fin"
+      "item": "cp_tweaks:monstrosity_heart_gu"
     },
     {
-      "item": "ad_astra:rocket_fin"
+      "item": "cp_tweaks:monstrosity_heart_gu"
     },
     {
-      "item": "ad_astra:rocket_fin"
-    },
-    {
-      "item": "ad_astra:rocket_fin"
+      "item": "cp_tweaks:monstrosity_heart_gu"
     }
   ],
         "results": [
           {
-            "item": "cp_tweaks:reinforced_rocket_fin",
-            "count": 4
+            "item": "cp_tweaks:imbued_rocket_nose_cone",
+            "count": 1
           }
         ]
       }

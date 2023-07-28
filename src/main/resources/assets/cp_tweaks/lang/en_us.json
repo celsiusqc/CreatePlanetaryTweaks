@@ -96,6 +96,10 @@
 
   "item.cp_tweaks.reinforced_rocket_fin": "Reinforced Rocket Fin",
   "item.cp_tweaks.ignitium_sheet": "Ignitium Sheet",
+  "item.cp_tweaks.ignitium_engine": "Ignitium Engine",
+  "item.cp_tweaks.heart_of_the_monstrosity": "Heart of the Monstrosity",
+  "item.cp_tweaks.monstrosity_heart_gu": "Monstrosity Heart Gu",
+  "item.cp_tweaks.imbued_rocket_nose_cone": "Rocket Nose Cone",
 
 
   "creativetab.cp_tweaks_tab": "Create Planetary Tweaks"
