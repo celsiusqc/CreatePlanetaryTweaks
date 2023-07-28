@@ -101,6 +101,9 @@ public class ModCreativeModTab {
                         if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Armor.OSTRUM_LEGGINGS.get()); }
                         if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(Armor.OSTRUM_BOOTS.get()); }
 
+                        if (ModList.get().isLoaded("ad_astra")) { pOutput.accept(ModItems.REINFORCED_ROCKET_FIN.get()); }
+                        if (ModList.get().isLoaded("cataclysm")) { pOutput.accept(ModItems.IGNITIUM_SHEET.get()); }
+
 
 
                     })

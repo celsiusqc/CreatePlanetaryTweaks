@@ -1,6 +1,8 @@
 package net.celsiusqc.cp_tweaks;
 
 import net.celsiusqc.cp_tweaks.item.*;
+import net.celsiusqc.cp_tweaks.loot.AddItemModifier;
+import net.celsiusqc.cp_tweaks.loot.ModLootModifiers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -31,6 +33,7 @@ public class CreatePlanetaryTweaks {
         Tools.register(modEventBus);
         Armor.register(modEventBus);
         ZincTools.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);

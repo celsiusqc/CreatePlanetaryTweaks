@@ -40,6 +40,12 @@ public class ModItems {
     public static final RegistryObject<Item> UNSTABLE_ICE_SHARD = ITEMS.register("unstable_ice_shard",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> REINFORCED_ROCKET_FIN = ITEMS.register("reinforced_rocket_fin",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> IGNITIUM_SHEET = ITEMS.register("ignitium_sheet",
+            () -> new Item(new Item.Properties()));
+
 
 
 

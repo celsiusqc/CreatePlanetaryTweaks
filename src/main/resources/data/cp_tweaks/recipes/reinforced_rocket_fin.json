@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        }
+      ],
+      "recipe": {
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "cp_tweaks:void_worm_gu"
+    },
+    {
+      "item": "ad_astra:rocket_fin"
+    },
+    {
+      "item": "ad_astra:rocket_fin"
+    },
+    {
+      "item": "ad_astra:rocket_fin"
+    },
+    {
+      "item": "ad_astra:rocket_fin"
+    }
+  ],
+        "results": [
+          {
+            "item": "cp_tweaks:reinforced_rocket_fin",
+            "count": 4
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "cataclysm"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        }
+      ],
+      "recipe": {
+        "type": "create:pressing",
+        "ingredients": [
+          {
+            "tag": "forge:ingots/ignitium"
+          }
+        ],
+        "results": [
+          {
+            "item": "cp_tweaks:ignitium_sheet"
+          }
+        ]
+      }
+    }
+  ]
+}

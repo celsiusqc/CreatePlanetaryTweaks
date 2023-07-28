@@ -196,6 +196,7 @@ dependencies {
 
     implementation fg.deobf("curse.maven:worldedit-225608:4586218")
     implementation fg.deobf("curse.maven:jei-238222:4609866")
+    implementation fg.deobf("curse.maven:just-enough-resources-jer-240630:4631691")
 
     //Ad Astra
     implementation fg.deobf("curse.maven:ad-astra-635042:4606233")
@@ -229,6 +230,9 @@ dependencies {
 
     //CraftTweaker
     implementation fg.deobf("curse.maven:crafttweaker-239197:4640784")
+
+    //Cataclysm
+    implementation fg.deobf("curse.maven:l_ender-s-cataclysm-551586:4665435")
 
 
     //Blur Mod
