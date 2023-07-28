@@ -6,5 +6,6 @@
       "loot_table_id": "alexsmobs:entities/void_worm"
     }
   ],
-  "lootTable": "cp_tweaks:inject/entities/void_worm"
+  "item": "cp_tweaks:void_worm_gu",
+  "count": 3
 }

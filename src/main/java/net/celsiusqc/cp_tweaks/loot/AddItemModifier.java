@@ -17,18 +17,26 @@ import java.util.function.Supplier;
 
 public class AddItemModifier extends LootModifier {
     public static final Supplier<Codec<AddItemModifier>> CODEC = Suppliers.memoize(()
-            -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
-            .fieldOf("item").forGetter(m -> m.item)).apply(inst, AddItemModifier::new)));
+            -> RecordCodecBuilder.create(inst -> codecStart(inst)
+            .and(ForgeRegistries.ITEMS.getCodec().fieldOf("item").forGetter(m -> m.item))
+            .and(Codec.INT.fieldOf("count").orElse(1).forGetter(m -> m.count)) // New count field
+            .apply(inst, AddItemModifier::new)));
+
     private final Item item;
 
-    protected AddItemModifier(LootItemCondition[] conditionsIn, Item item) {
+    private final int count; // New count field
+    protected AddItemModifier(LootItemCondition[] conditionsIn, Item item, int count) { // Updated constructor
         super(conditionsIn);
         this.item = item;
+        this.count = count;
     }
+
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
+        for (int i = 0; i < count; i++) { // Add 'count' number of items
             generatedLoot.add(new ItemStack(item));
+        }
 
         return generatedLoot;
     }
