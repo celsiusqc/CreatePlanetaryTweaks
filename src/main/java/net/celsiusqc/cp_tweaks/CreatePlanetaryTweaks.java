@@ -1,5 +1,6 @@
 package net.celsiusqc.cp_tweaks;
 
+import net.celsiusqc.cp_tweaks.base.block.ModBlocks;
 import net.celsiusqc.cp_tweaks.item.*;
 import net.celsiusqc.cp_tweaks.loot.ModLootModifiers;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,6 +33,7 @@ public class CreatePlanetaryTweaks {
         Armor.register(modEventBus);
         ZincTools.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         GeckoLib.initialize();
 

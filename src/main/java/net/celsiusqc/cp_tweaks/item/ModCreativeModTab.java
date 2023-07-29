@@ -1,6 +1,7 @@
 package net.celsiusqc.cp_tweaks.item;
 
 import net.celsiusqc.cp_tweaks.CreatePlanetaryTweaks;
+import net.celsiusqc.cp_tweaks.base.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +20,8 @@ public class ModCreativeModTab {
                     .title(Component.translatable("creativetab.cp_tweaks_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
+                        if (ModList.get().isLoaded("disabled")) { pOutput.accept(ModBlocks.CREATE_PLANETARY_TWEAKS_LOGO_BLOCK.get()); }
+                        { pOutput.accept(ModItems.CREATE_PLANETARY_TWEAKS_LOGO.get()); }
                         if (ModList.get().isLoaded("create") &&(ModList.get().isLoaded("ad_astra"))) { pOutput.accept(ModItems.UNSTABLE_ICE_SHARD.get()); }
                         if (ModList.get().isLoaded("create") && ModList.get().isLoaded("alexsmobs")) {pOutput.accept(ModItems.VOID_WORM_GU.get());}
                         if (ModList.get().isLoaded("cataclysm") && ModList.get().isLoaded("create")) { pOutput.accept(ModItems.ENDER_GUARDIAN_GU.get()); }

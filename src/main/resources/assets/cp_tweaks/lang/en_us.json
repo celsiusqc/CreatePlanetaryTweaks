@@ -114,6 +114,8 @@
   "item.cp_tweaks.reinforced_ostrum_plate": "Reinforced Ostrum Plate",
   "item.cp_tweaks.ender_plating": "Ender Plating",
   "item.cp_tweaks.ender_guardian_gu": "Ender Guardian Gu",
+  "block.cp_tweaks.create_planetary_tweaks_logo_block": "Create Planetary Tweaks Logo",
+  "item.cp_tweaks.create_planetary_tweaks_logo": "Create Planetary Tweaks Logo",
 
   "item.cp_tweaks.zinc_sword.tooltip": "This item induces holy damage to the undead.",
   "item.cp_tweaks.zinc_axe.tooltip": "This item induces holy damage to the undead.",

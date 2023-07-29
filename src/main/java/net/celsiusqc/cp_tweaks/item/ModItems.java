@@ -16,6 +16,9 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, CreatePlanetaryTweaks.MOD_ID);
 
+    public static final RegistryObject<Item> CREATE_PLANETARY_TWEAKS_LOGO = ITEMS.register("create_planetary_tweaks_logo",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> AUTUMN = ITEMS.register("autumn",
             () -> new Item(new Item.Properties()));
 
@@ -65,6 +68,8 @@ public class ModItems {
             () -> new EnderGuardianGuTooltip(new Item.Properties()));
     public static final RegistryObject<Item> ENDER_PLATING = ITEMS.register("ender_plating",
             () -> new Item(new Item.Properties()));
+
+
 
 
 
