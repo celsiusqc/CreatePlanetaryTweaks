@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "cataclysm"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        }
+      ],
+      "recipe": {
+        "type": "create:compacting",
+        "ingredients": [
+          {
+            "item": "cp_tweaks:ender_guardian_gu"
+          },
+          {
+            "item": "cp_tweaks:ender_guardian_gu"
+          },
+          {
+            "item": "cp_tweaks:ender_guardian_gu"
+          }
+        ],
+        "results": [
+          {
+            "item": "cp_tweaks:ender_plating",
+            "count": 2
+          }
+        ]
+      }
+    }
+  ]
+}

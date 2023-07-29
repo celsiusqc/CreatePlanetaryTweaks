@@ -1,7 +1,6 @@
 package net.celsiusqc.cp_tweaks;
 
 import net.celsiusqc.cp_tweaks.item.*;
-import net.celsiusqc.cp_tweaks.loot.AddItemModifier;
 import net.celsiusqc.cp_tweaks.loot.ModLootModifiers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -13,8 +12,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-
-import static javax.swing.text.html.parser.DTDConstants.ID;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CreatePlanetaryTweaks.MOD_ID)

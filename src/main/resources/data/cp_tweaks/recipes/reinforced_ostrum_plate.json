@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "cataclysm"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        }
+      ],
+      "recipe": {
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "ad_astra:ostrum_plate"
+    },
+    {
+      "item": "cp_tweaks:monstrosity_heart_gu"
+    }
+  ],
+        "results": [
+          {
+            "item": "cp_tweaks:reinforced_ostrum_plate",
+            "count": 1
+          }
+        ]
+      }
+    }
+  ]
+}

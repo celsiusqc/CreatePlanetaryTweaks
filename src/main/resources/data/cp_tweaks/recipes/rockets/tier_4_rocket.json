@@ -21,7 +21,7 @@
         "ingredients": [
           {
             "ingredient": {
-              "item": "cp_tweaks:imbued_rocket_nose_cone"
+              "item": "cp_tweaks:reinforced_rocket_nose_cone"
             }
           },
           {
@@ -46,12 +46,12 @@
           },
           {
             "ingredient": {
-              "item": "cataclysm:void_stone"
+              "item": "cp_tweaks:ender_plating"
             }
           },
           {
             "ingredient": {
-              "item": "cataclysm:void_stone"
+              "item": "cp_tweaks:ender_plating"
             }
           },
           {

@@ -106,7 +106,13 @@ public class ModCreativeModTab {
                         if (ModList.get().isLoaded("cataclysm") && ModList.get().isLoaded("create") && ModList.get().isLoaded("ad_astra")) { pOutput.accept(ModItems.IGNITIUM_ENGINE.get()); }
                         if (ModList.get().isLoaded("cataclysm")) { pOutput.accept(ModItems.HEART_OF_THE_MONSTROSITY.get()); }
                         if (ModList.get().isLoaded("cataclysm") && ModList.get().isLoaded("create")) { pOutput.accept(ModItems.MONSTROSITY_HEART_GU.get()); }
-                        if (ModList.get().isLoaded("cataclysm") && ModList.get().isLoaded("create") && ModList.get().isLoaded("ad_astra")) { pOutput.accept(ModItems.IMBUED_ROCKET_NOSE_CONE.get()); }
+                        if (ModList.get().isLoaded("cataclysm") && ModList.get().isLoaded("create") && ModList.get().isLoaded("ad_astra")) { pOutput.accept(ModItems.REINFORCED_ROCKET_NOSE_CONE.get()); }
+                        if (ModList.get().isLoaded("cataclysm") && ModList.get().isLoaded("create") && ModList.get().isLoaded("ad_astra")) { pOutput.accept(ModItems.REINFORCED_OSTRUM_PLATE.get()); }
+
+                        if (ModList.get().isLoaded("cataclysm") && ModList.get().isLoaded("create")) { pOutput.accept(ModItems.ENDER_PLATING.get()); }
+                        if (ModList.get().isLoaded("cataclysm") && ModList.get().isLoaded("create")) { pOutput.accept(ModItems.ENDER_GUARDIAN_GU.get()); }
+
+
 
 
 

@@ -1,0 +1,22 @@
+{
+  "type": "ad_astra:crafting_shaped_space_suit",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/steel"
+    },
+    "W": {
+      "item": "minecraft:white_wool"
+    },
+    "V": {
+      "item": "cp_tweaks:void_wormed_leggings"
+    }
+  },
+  "pattern": [
+    "###",
+    "WVW",
+    "# #"
+  ],
+  "result": {
+    "item": "ad_astra:space_pants"
+  }
+}
