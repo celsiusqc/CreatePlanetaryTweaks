@@ -23,6 +23,7 @@ public class JEIPlugin implements IModPlugin {
         reg.addIngredientInfo(new ItemStack(ModItems.VOID_WORM_GU.get()), VanillaTypes.ITEM_STACK, Component.translatable("info.celsiusqc.void_worm_gu"));
         reg.addIngredientInfo(new ItemStack(ModItems.HEART_OF_THE_MONSTROSITY.get()), VanillaTypes.ITEM_STACK, Component.translatable("info.celsiusqc.heart_of_the_monstrosity"));
         reg.addIngredientInfo(new ItemStack(ModItems.ENDER_GUARDIAN_GU.get()), VanillaTypes.ITEM_STACK, Component.translatable("info.celsiusqc.ender_guardian_gu"));
+        reg.addIngredientInfo(new ItemStack(ModItems.UNSTABLE_ICE_SHARD.get()), VanillaTypes.ITEM_STACK, Component.translatable("info.celsiusqc.unstable_ice_shard"));
     }
 
 }

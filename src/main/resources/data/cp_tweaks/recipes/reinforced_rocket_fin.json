@@ -16,7 +16,7 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "item": "cp_tweaks:void_worm_gu"
+      "tag": "forge:gu/void_worm"
     },
     {
       "item": "ad_astra:rocket_fin"

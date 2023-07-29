@@ -18,7 +18,7 @@ public enum ArmorTiers implements ArmorMaterial {
         map.put(ArmorItem.Type.LEGGINGS, 8);
         map.put(ArmorItem.Type.CHESTPLATE, 10);
         map.put(ArmorItem.Type.HELMET, 5);
-    }), 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.2F, 0.12F, () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "void_worm_gu")))),
+    }), 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.2F, 0.12F, () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "gu/void_worm")))),
 
     DESH("desh", 51, Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 6);
@@ -34,12 +34,28 @@ public enum ArmorTiers implements ArmorMaterial {
         map.put(ArmorItem.Type.HELMET, 8);
     }), 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.2F, 0.12F, () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/calorite")))),
 
-    OSTRUM("ostrum", 56, Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+    OSTRUM("ostrum", 61, Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 8);
         map.put(ArmorItem.Type.LEGGINGS, 12);
         map.put(ArmorItem.Type.CHESTPLATE, 14);
         map.put(ArmorItem.Type.HELMET, 9);
-    }), 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.4F, 0.14F, () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/ostrum"))));
+    }), 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.4F, 0.14F, () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/ostrum")))),
+
+    ICE_SHARD("ice_shard", 45, Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+        map.put(ArmorItem.Type.BOOTS, 10);
+        map.put(ArmorItem.Type.LEGGINGS, 14);
+        map.put(ArmorItem.Type.CHESTPLATE, 16);
+        map.put(ArmorItem.Type.HELMET, 11);
+    }), 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.2F, 0.12F, () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "shards/unstable_ice"))));           //   <---- Remove the semi-colon if you add new armor
+
+
+
+
+
+
+
+
+
 
     private static final EnumMap<ArmorItem.Type, Integer> HEALTH_FUNCTION_FOR_TYPE = Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266653_) -> {
         p_266653_.put(ArmorItem.Type.BOOTS, 13);

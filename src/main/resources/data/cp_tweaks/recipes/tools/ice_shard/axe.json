@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "00",
+          "#1",
+          " 1"
+        ],
+        "key": {
+          "0": {
+            "tag": "forge:shards/ice"
+          },
+          "1": {
+            "tag": "forge:rods/wooden"
+          },
+          "#": {
+            "tag": "forge:shards/unstable_ice"
+          }
+        },
+        "result": {
+          "item": "cp_tweaks:ice_shard_axe",
+          "count": 1
+        }
+      }
+    }
+  ]
+}

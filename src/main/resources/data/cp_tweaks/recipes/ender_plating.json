@@ -16,13 +16,13 @@
         "type": "create:compacting",
         "ingredients": [
           {
-            "item": "cp_tweaks:ender_guardian_gu"
+            "tag": "forge:gu/ender_guardian"
           },
           {
-            "item": "cp_tweaks:ender_guardian_gu"
+            "tag": "forge:gu/ender_guardian"
           },
           {
-            "item": "cp_tweaks:ender_guardian_gu"
+            "tag": "forge:gu/ender_guardian"
           }
         ],
         "results": [

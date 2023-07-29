@@ -4,6 +4,7 @@ import earth.terrarium.ad_astra.common.item.vehicle.RocketItem;
 import net.celsiusqc.cp_tweaks.CreatePlanetaryTweaks;
 import net.celsiusqc.cp_tweaks.item.Tooltips.EnderGuardianGu;
 import net.celsiusqc.cp_tweaks.item.Tooltips.HeartOfTheMonstrosity;
+import net.celsiusqc.cp_tweaks.item.Tooltips.UnstableIceShard;
 import net.celsiusqc.cp_tweaks.item.Tooltips.VoidWormGu;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -44,7 +45,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> UNSTABLE_ICE_SHARD = ITEMS.register("unstable_ice_shard",
-            () -> new Item(new Item.Properties()));
+            () -> new UnstableIceShard(new Item.Properties()));
 
     public static final RegistryObject<Item> REINFORCED_ROCKET_FIN = ITEMS.register("reinforced_rocket_fin",
             () -> new Item(new Item.Properties()));

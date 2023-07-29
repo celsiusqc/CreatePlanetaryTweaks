@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import software.bernie.geckolib.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CreatePlanetaryTweaks.MOD_ID)
@@ -31,6 +32,9 @@ public class CreatePlanetaryTweaks {
         Armor.register(modEventBus);
         ZincTools.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+
+        GeckoLib.initialize();
+
 
 
         modEventBus.addListener(this::commonSetup);

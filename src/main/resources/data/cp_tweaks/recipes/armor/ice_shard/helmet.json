@@ -1,0 +1,32 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "000",
+          "0#0"
+        ],
+        "key": {
+          "0": {
+            "tag": "forge:shards/ice"
+          },
+          "#": {
+            "tag": "forge:shards/unstable_ice"
+          }
+        },
+        "result": {
+          "item": "cp_tweaks:ice_shard_helmet",
+          "count": 1
+        }
+      }
+    }
+  ]
+}

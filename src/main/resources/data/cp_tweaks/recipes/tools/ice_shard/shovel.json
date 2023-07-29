@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "#",
+          "1",
+          "1"
+        ],
+        "key": {
+          "1": {
+            "tag": "forge:rods/wooden"
+          },
+          "#": {
+            "tag": "forge:shards/unstable_ice"
+          }
+        },
+        "result": {
+          "item": "cp_tweaks:ice_shard_shovel",
+          "count": 1
+        }
+      }
+    }
+  ]
+}

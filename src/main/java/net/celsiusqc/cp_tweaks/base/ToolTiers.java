@@ -70,7 +70,7 @@ public class ToolTiers {
                 6,
                 15,
                 null,
-                () -> Ingredient.of(ModItems.VOID_WORM_GU.get()));
+                () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "gu/void_worm"))));
 
         //Desh
         public static final Tier DESH = new ForgeTier(
@@ -82,25 +82,37 @@ public class ToolTiers {
                 null,
                 () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/desh"))));
 
-        //Calorite
-        public static final Tier CALORITE = new ForgeTier(
+        //Ostrum
+        public static final Tier OSTRUM = new ForgeTier(
                 4,
                 2354,
                 10,
                 8,
                 15,
                 null,
-                () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/calorite"))));
+                () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/ostrum"))));
 
-        //Ostrum
-        public static final Tier OSTRUM = new ForgeTier(
-                4,
+
+
+        //Calorite
+        public static final Tier CALORITE = new ForgeTier(
+                5,
                 2414,
                 10,
                 9,
                 15,
                 null,
-                () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/ostrum"))));
+                () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/calorite"))));
+
+        //Calorite
+        public static final Tier ICE_SHARD = new ForgeTier(
+                6,
+                3000,
+                12,
+                10,
+                20,
+                null,
+                () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "shards/unstable_ice"))));
 
 
 

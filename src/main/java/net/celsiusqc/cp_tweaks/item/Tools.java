@@ -78,9 +78,9 @@ public class Tools {
     public static final RegistryObject<AxeItem> VOID_WORM_AXE = ITEMS.register("void_wormed_axe",
             () -> new AxeItem(ToolTiers.VOID_WORMED, 5, -3.0f, new Item.Properties()));
     public static final RegistryObject<PickaxeItem> VOID_WORM_PICKAXE = ITEMS.register("void_wormed_pickaxe",
-            () -> new PickaxeItem(ToolTiers.VOID_WORMED, 0, -2.8f, new Item.Properties()));
+            () -> new PickaxeItem(ToolTiers.VOID_WORMED, 1, -2.8f, new Item.Properties()));
     public static final RegistryObject<ShovelItem> VOID_WORM_SHOVEL = ITEMS.register("void_wormed_shovel",
-            () -> new ShovelItem(ToolTiers.VOID_WORMED, 0, -3.0f, new Item.Properties()));
+            () -> new ShovelItem(ToolTiers.VOID_WORMED, 1.5f, -3.0f, new Item.Properties()));
     public static final RegistryObject<HoeItem> VOID_WORM_HOE = ITEMS.register("void_wormed_hoe",
             () -> new HoeItem(ToolTiers.VOID_WORMED, -6, 0.0f, new Item.Properties()));
 
@@ -93,28 +93,11 @@ public class Tools {
     public static final RegistryObject<AxeItem> DESH_AXE = ITEMS.register("desh_axe",
             () -> new AxeItem(ToolTiers.DESH, 5, -3.0f, new Item.Properties()));
     public static final RegistryObject<PickaxeItem> DESH_PICKAXE = ITEMS.register("desh_pickaxe",
-            () -> new PickaxeItem(ToolTiers.DESH, 0, -2.8f, new Item.Properties()));
+            () -> new PickaxeItem(ToolTiers.DESH, 1, -2.8f, new Item.Properties()));
     public static final RegistryObject<ShovelItem> DESH_SHOVEL = ITEMS.register("desh_shovel",
-            () -> new ShovelItem(ToolTiers.DESH, -1, -3.0f, new Item.Properties()));
+            () -> new ShovelItem(ToolTiers.DESH, 1.5f, -3.0f, new Item.Properties()));
     public static final RegistryObject<HoeItem> DESH_HOE = ITEMS.register("desh_hoe",
             () -> new HoeItem(ToolTiers.DESH, -7, 0.0f, new Item.Properties()));
-
-
-
-
-    public static final RegistryObject<SwordItem> CALORITE_SWORD = ITEMS.register("calorite_sword",
-            () -> new SwordItem(ToolTiers.CALORITE, 3, -2.4f, new Item.Properties()));
-    //Attack DMG Bonus from Base  - Attack Speed float -- Adds to the base of 1attack dmg, 4 attack speed
-    public static final RegistryObject<AxeItem> CALORITE_AXE = ITEMS.register("calorite_axe",
-            () -> new AxeItem(ToolTiers.CALORITE, 5, -3.0f, new Item.Properties()));
-    public static final RegistryObject<PickaxeItem> CALORITE_PICKAXE = ITEMS.register("calorite_pickaxe",
-            () -> new PickaxeItem(ToolTiers.CALORITE, 0, -2.8f, new Item.Properties()));
-    public static final RegistryObject<ShovelItem> CALORITE_SHOVEL = ITEMS.register("calorite_shovel",
-            () -> new ShovelItem(ToolTiers.CALORITE, -1, -3.0f, new Item.Properties()));
-    public static final RegistryObject<HoeItem> CALORITE_HOE = ITEMS.register("calorite_hoe",
-            () -> new HoeItem(ToolTiers.CALORITE, -8, 0.0f, new Item.Properties()));
-
-
 
     public static final RegistryObject<SwordItem> OSTRUM_SWORD = ITEMS.register("ostrum_sword",
             () -> new SwordItem(ToolTiers.OSTRUM, 3, -2.4f, new Item.Properties()));
@@ -124,9 +107,35 @@ public class Tools {
     public static final RegistryObject<PickaxeItem> OSTRUM_PICKAXE = ITEMS.register("ostrum_pickaxe",
             () -> new PickaxeItem(ToolTiers.OSTRUM, 0, -2.8f, new Item.Properties()));
     public static final RegistryObject<ShovelItem> OSTRUM_SHOVEL = ITEMS.register("ostrum_shovel",
-            () -> new ShovelItem(ToolTiers.OSTRUM, -1, -3.0f, new Item.Properties()));
+            () -> new ShovelItem(ToolTiers.OSTRUM, 1.5f, -3.0f, new Item.Properties()));
     public static final RegistryObject<HoeItem> OSTRUM_HOE = ITEMS.register("ostrum_hoe",
             () -> new HoeItem(ToolTiers.OSTRUM, -9, 0.0f, new Item.Properties()));
+
+    public static final RegistryObject<SwordItem> CALORITE_SWORD = ITEMS.register("calorite_sword",
+            () -> new SwordItem(ToolTiers.CALORITE, 3, -2.4f, new Item.Properties()));
+    //Attack DMG Bonus from Base  - Attack Speed float -- Adds to the base of 1attack dmg, 4 attack speed
+    public static final RegistryObject<AxeItem> CALORITE_AXE = ITEMS.register("calorite_axe",
+            () -> new AxeItem(ToolTiers.CALORITE, 5, -3.0f, new Item.Properties()));
+    public static final RegistryObject<PickaxeItem> CALORITE_PICKAXE = ITEMS.register("calorite_pickaxe",
+            () -> new PickaxeItem(ToolTiers.CALORITE, 1, -2.8f, new Item.Properties()));
+    public static final RegistryObject<ShovelItem> CALORITE_SHOVEL = ITEMS.register("calorite_shovel",
+            () -> new ShovelItem(ToolTiers.CALORITE, 1.5f, -3.0f, new Item.Properties()));
+    public static final RegistryObject<HoeItem> CALORITE_HOE = ITEMS.register("calorite_hoe",
+            () -> new HoeItem(ToolTiers.CALORITE, -8, 0.0f, new Item.Properties()));
+
+
+//Ice Shard
+    public static final RegistryObject<SwordItem> ICE_SHARD_SWORD = ITEMS.register("ice_shard_sword",
+            () -> new SwordItem(ToolTiers.ICE_SHARD, 3, -2.4f, new Item.Properties()));
+    //Attack DMG Bonus from Base  - Attack Speed float -- Adds to the base of 1attack dmg, 4 attack speed
+    public static final RegistryObject<AxeItem> ICE_SHARD_AXE = ITEMS.register("ice_shard_axe",
+            () -> new AxeItem(ToolTiers.ICE_SHARD, 5, -3.0f, new Item.Properties()));
+    public static final RegistryObject<PickaxeItem> ICE_SHARD_PICKAXE = ITEMS.register("ice_shard_pickaxe",
+            () -> new PickaxeItem(ToolTiers.ICE_SHARD, 0, -2.8f, new Item.Properties()));
+    public static final RegistryObject<ShovelItem> ICE_SHARD_SHOVEL = ITEMS.register("ice_shard_shovel",
+            () -> new ShovelItem(ToolTiers.ICE_SHARD, 1.5f, -3.0f, new Item.Properties()));
+    public static final RegistryObject<HoeItem> ICE_SHARD_HOE = ITEMS.register("ice_shard_hoe",
+            () -> new HoeItem(ToolTiers.ICE_SHARD, -9, 0.0f, new Item.Properties()));
 
 
 

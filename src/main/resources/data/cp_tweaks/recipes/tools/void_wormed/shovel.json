@@ -20,7 +20,7 @@
             "item": "minecraft:golden_shovel"
           },
           {
-            "item": "cp_tweaks:void_worm_gu"
+            "tag": "forge:gu/void_worm"
           },
           {
             "amount": 500,

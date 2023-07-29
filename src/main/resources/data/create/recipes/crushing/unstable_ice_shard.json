@@ -37,7 +37,7 @@
           {
             "item": "cp_tweaks:unstable_ice_shard",
             "count": 1,
-            "chance": 0.02
+            "chance": 0.01
           },
           {
             "item": "create:experience_nugget",

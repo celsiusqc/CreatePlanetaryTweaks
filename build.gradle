@@ -18,7 +18,11 @@ plugins {
 
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.0.5-1.20.1'
+
+// Read the mod_version property from gradle.properties
+def modVersion = project.findProperty("mod_version") ?: "1.0.5-1.20.1"
+
+version = "$modVersion"
 group = 'net.celsiusqc.cp_tweaks' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'cp_tweaks'
 
@@ -174,6 +178,11 @@ repositories {
         url "https://nexus.resourcefulbees.com/repository/telepathicgrunt/"
     }
 
+    maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+    }
+
 
     // If you have mod jar dependencies in ./libs, you can declare them as a repository like so.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html#sub:flat_dir_resolver
@@ -204,10 +213,10 @@ dependencies {
     implementation fg.deobf("curse.maven:just-enough-resources-jer-240630:4631691")
 
     //Ad Astra
-    implementation fg.deobf("curse.maven:ad-astra-635042:4606233")
-    implementation fg.deobf("curse.maven:resourceful-lib-570073:4598948")
+    implementation fg.deobf("curse.maven:ad-astra-635042:4643679")
+    implementation fg.deobf("curse.maven:resourceful-lib-570073:4669012")
     implementation fg.deobf("curse.maven:resourceful-config-714059:4576455")
-    implementation fg.deobf("curse.maven:botarium-704113:4594094")
+    implementation fg.deobf("curse.maven:botarium-704113:4643197")
 
     //Rats
     implementation fg.deobf("curse.maven:rats-323596:4608071")
@@ -238,6 +247,10 @@ dependencies {
 
     //Cataclysm
     implementation fg.deobf("curse.maven:l_ender-s-cataclysm-551586:4665435")
+
+    //Geckolib
+    implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.20:4.2')
+
 
 
     //Blur Mod
