@@ -135,7 +135,7 @@ public class Tools {
     public static final RegistryObject<ShovelItem> ICE_SHARD_SHOVEL = ITEMS.register("ice_shard_shovel",
             () -> new ShovelItem(ToolTiers.ICE_SHARD, 1.5f, -3.0f, new Item.Properties()));
     public static final RegistryObject<HoeItem> ICE_SHARD_HOE = ITEMS.register("ice_shard_hoe",
-            () -> new HoeItem(ToolTiers.ICE_SHARD, -9, 0.0f, new Item.Properties()));
+            () -> new HoeItem(ToolTiers.ICE_SHARD, -10, 0.0f, new Item.Properties()));
 
 
 
