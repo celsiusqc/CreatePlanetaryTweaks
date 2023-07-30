@@ -41,7 +41,7 @@ public enum ArmorTiers implements ArmorMaterial {
         map.put(ArmorItem.Type.HELMET, 9);
     }), 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.4F, 0.14F, () -> Ingredient.of(ItemTags.create(new ResourceLocation("forge", "ingots/ostrum")))),
 
-    ICE_SHARD("ice_shard", 45, Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+    ICE_SHARD("ice_shard", 70, Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 10);
         map.put(ArmorItem.Type.LEGGINGS, 14);
         map.put(ArmorItem.Type.CHESTPLATE, 16);
