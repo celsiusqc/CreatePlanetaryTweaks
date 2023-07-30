@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    {"id": "cp_tweaks:reinforced_ostrum_plate","required":false}
+    {"id": "cp_tweaks:sturdy_ostrum_sheet","required":false}
   ]
 }

@@ -6,6 +6,6 @@
       "loot_table_id": "cataclysm:entities/netherite_monstrosity"
     }
   ],
-  "item": "cp_tweaks:heart_of_the_monstrosity",
-  "count": 1
+  "item": "cp_tweaks:monstrosity_gu",
+  "count": 2
 }

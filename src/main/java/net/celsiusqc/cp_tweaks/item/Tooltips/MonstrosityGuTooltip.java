@@ -11,8 +11,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class HeartOfTheMonstrosityTooltip extends Item {
-    public HeartOfTheMonstrosityTooltip(Properties pProperties) {
+public class MonstrosityGuTooltip extends Item {
+    public MonstrosityGuTooltip(Properties pProperties) {
         super(pProperties);
     }
 

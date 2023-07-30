@@ -5,6 +5,10 @@
       "conditions": [
         {
           "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        },
+        {
+          "type": "forge:mod_loaded",
           "modid": "cataclysm"
         },
         {
@@ -13,22 +17,19 @@
         }
       ],
       "recipe": {
-        "type": "create:compacting",
-        "ingredients": [
-          {
-            "tag": "forge:gu/ender_guardian"
-          },
-          {
-            "tag": "forge:gu/ender_guardian"
-          },
-          {
-            "tag": "forge:gu/ender_guardian"
-          }
-        ],
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "ad_astra:ostrum_plate"
+    },
+    {
+      "tag": "forge:gu/monstrosity"
+    }
+  ],
         "results": [
           {
-            "item": "cp_tweaks:ender_plating",
-            "count": 2
+            "item": "cp_tweaks:sturdy_ostrum_sheet",
+            "count": 1
           }
         ]
       }

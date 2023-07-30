@@ -20,15 +20,21 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "item": "ad_astra:ostrum_plate"
+      "item": "ad_astra:rocket_nose_cone"
     },
     {
-      "tag": "forge:gu/monstrosity_heart"
+      "tag": "forge:gu/monstrosity"
+    },
+    {
+      "tag": "forge:gu/monstrosity"
+    },
+    {
+      "tag": "forge:gu/monstrosity"
     }
   ],
         "results": [
           {
-            "item": "cp_tweaks:reinforced_ostrum_plate",
+            "item": "cp_tweaks:reinforced_rocket_nose_cone",
             "count": 1
           }
         ]
