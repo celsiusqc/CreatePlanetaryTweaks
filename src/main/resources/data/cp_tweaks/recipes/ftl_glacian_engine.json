@@ -1,0 +1,48 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "cataclysm"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "alexsmobs"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "engines",
+        "key": {
+          "#": {
+            "tag": "forge:plates/stabilized_ice"
+          },
+          "E": {
+            "item": "cp_tweaks:glacian_engine_frame"
+          },
+          "F": {
+            "item": "cp_tweaks:glacian_engine_fan"
+          }
+        },
+        "pattern": [
+          "###",
+          " E ",
+          " F "
+        ],
+        "result": {
+          "item": "cp_tweaks:ftl_glacian_engine"
+        }
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "cp_tweaks:item/zinc_shovel"
+    "layer0": "cp_tweaks:item/zinc/shovel"
   }
 }

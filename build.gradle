@@ -22,7 +22,7 @@ apply plugin: 'org.spongepowered.mixin'
 // Read the mod_version property from gradle.properties
 def modVersion = project.findProperty("mod_version") ?: "1.0.5-1.20.1"
 
-version = "$modVersion"
+version = "forge-1.20.1-$modVersion"
 group = 'net.celsiusqc.cp_tweaks' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'cp_tweaks'
 

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "cp_tweaks:item/zinc_axe"
+    "layer0": "cp_tweaks:item/zinc/axe"
   }
 }
