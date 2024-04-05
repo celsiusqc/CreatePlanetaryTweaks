@@ -69,6 +69,12 @@ versionRange="[0.5.1.d,)"
 ordering="NONE"
 side="BOTH"
 [[dependencies.cp_tweaks]]
+modId="geckolib"
+mandatory=true
+versionRange="[4.2,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.cp_tweaks]]
 modId="ad_astra"
 mandatory=false
 versionRange="[1.15.1,)"

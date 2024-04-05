@@ -1,14 +1,14 @@
 {
-  "type": "ad_astra:crafting_shaped_space_suit",
+  "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "tag": "forge:ingots/steel"
+      "tag": "forge:plates/steel"
     },
     "O": {
       "item": "ad_astra:oxygen_gear"
     },
     "T": {
-      "item": "ad_astra:oxygen_tank"
+      "item": "ad_astra:gas_tank"
     },
     "W": {
       "item": "minecraft:white_wool"

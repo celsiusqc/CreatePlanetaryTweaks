@@ -1,11 +1,11 @@
 {
-  "type": "ad_astra:crafting_shaped_space_suit",
+  "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
       "tag": "forge:plates/reinforced_ostrum"
     },
     "D": {
-      "tag": "ad_astra_platform:desh_plates"
+      "tag": "forge:plates/desh"
     },
     "N": {
       "item": "ad_astra:space_boots"

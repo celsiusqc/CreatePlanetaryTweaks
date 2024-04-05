@@ -37,6 +37,8 @@
   "item.cp_tweaks.glacian_engine_frame": "Glacian Engine Frame",
   "item.cp_tweaks.glacian_engine_fan": "Glacian Engine Fan",
 
+  "item.cp_tweaks.weird_satellite": "Weird Satellite",
+
   "item.cp_tweaks.void_wormed_sword": "Void Wormed Sword",
   "item.cp_tweaks.void_wormed_axe": "Void Wormed Axe",
   "item.cp_tweaks.void_wormed_shovel": "Void Wormed Shovel",
@@ -109,6 +111,8 @@
   "item.cp_tweaks.ice_shard_shovel": "Ice Shard Shovel",
   "item.cp_tweaks.ice_shard_pickaxe": "Ice Shard Pickaxe",
   "item.cp_tweaks.ice_shard_hoe": "Ice Shard Hoe",
+
+  "item.cp_tweaks.giant_ice_shard_sword": "Giant Ice Shard Sword",
 
   "item.cp_tweaks.reinforced_rocket_fin": "Reinforced Rocket Fin",
   "item.cp_tweaks.ignitium_sheet": "Ignitium Sheet",

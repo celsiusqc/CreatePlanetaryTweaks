@@ -70,6 +70,9 @@ public class ModItems {
     public static final RegistryObject<Item> GLACIAN_ENGINE_FAN = ITEMS.register("glacian_engine_fan",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> WEIRD_SATELLITE = ITEMS.register("weird_satellite",
+            () -> new Item(new Item.Properties()));
+
 
 
 

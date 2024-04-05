@@ -213,10 +213,10 @@ dependencies {
     implementation fg.deobf("curse.maven:just-enough-resources-jer-240630:4631691")
 
     //Ad Astra
-    implementation fg.deobf("curse.maven:ad-astra-635042:4643679")
-    implementation fg.deobf("curse.maven:resourceful-lib-570073:4669012")
-    implementation fg.deobf("curse.maven:resourceful-config-714059:4576455")
-    implementation fg.deobf("curse.maven:botarium-704113:4643197")
+    implementation fg.deobf("curse.maven:ad-astra-635042:5116766")
+    implementation fg.deobf("curse.maven:resourceful-lib-570073:5210240")
+    implementation fg.deobf("curse.maven:resourceful-config-714059:5020441")
+    implementation fg.deobf("curse.maven:botarium-704113:5118353")
 
     //Rats
     implementation fg.deobf("curse.maven:rats-323596:4608071")
@@ -250,6 +250,12 @@ dependencies {
 
     //Geckolib
     implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.20:4.2')
+
+    //Ad Astra Rocketed
+    implementation fg.deobf("curse.maven:ad-astra-rocketed-996980:5237010")
+
+    //Twilight Forest
+    implementation fg.deobf("curse.maven:the-twilight-forest-227639:5071019")
 
 
 

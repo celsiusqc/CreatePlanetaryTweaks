@@ -19,78 +19,25 @@
       "recipe": {
         "type": "ad_astra:nasa_workbench",
         "ingredients": [
-          {
-            "ingredient": {
-              "item": "cp_tweaks:reinforced_rocket_nose_cone"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "cataclysm:void_stone"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "cataclysm:void_stone"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "cataclysm:void_stone"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "cataclysm:void_stone"
-            }
-          },
-          {
-            "ingredient": {
-              "tag": "forge:plates/ender"
-            }
-          },
-          {
-            "ingredient": {
-              "tag": "forge:plates/ender"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "cp_tweaks:reinforced_rocket_fin"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "ad_astra:calorite_tank"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "ad_astra:calorite_tank"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "cp_tweaks:reinforced_rocket_fin"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "cp_tweaks:reinforced_rocket_fin"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "cp_tweaks:ignitium_engine"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "cp_tweaks:reinforced_rocket_fin"
-            }
-          }
+          {"item": "cp_tweaks:reinforced_rocket_nose_cone"},
+          {"item": "cataclysm:void_stone"},
+          {"item": "cataclysm:void_stone"},
+          {"item": "cataclysm:void_stone"},
+          {"item": "cataclysm:void_stone"},
+          {"tag": "forge:plates/ender"},
+          {"tag": "forge:plates/ender"},
+          {"item": "cp_tweaks:reinforced_rocket_fin"},
+          {"item": "ad_astra:calorite_tank"},
+          {"item": "ad_astra:calorite_tank"},
+          {"item": "cp_tweaks:reinforced_rocket_fin"},
+          {"item": "cp_tweaks:reinforced_rocket_fin"},
+          {"item": "cp_tweaks:ignitium_engine"},
+          {"item": "cp_tweaks:reinforced_rocket_fin"}
         ],
-        "output": "ad_astra:tier_4_rocket"
+        "result": {
+          "count": 1,
+          "id": "ad_astra:tier_4_rocket"
+        }
       }
     }
   ]

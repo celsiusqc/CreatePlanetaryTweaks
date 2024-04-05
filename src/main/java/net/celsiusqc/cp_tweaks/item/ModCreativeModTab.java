@@ -40,6 +40,11 @@ public class ModCreativeModTab {
                                 pOutput.accept(ModItems.GLACIAN_ENGINE_FRAME.get());
                                 pOutput.accept(ModItems.FTL_GLACIAN_ENGINE.get());
 
+                                if (ModList.get().isLoaded("twilightforest")) {
+                                    pOutput.accept(ModItems.WEIRD_SATELLITE.get());
+                                }
+
+
                             }
 
                         }
@@ -175,6 +180,11 @@ public class ModCreativeModTab {
                             pOutput.accept(Tools.ICE_SHARD_PICKAXE.get());
                             pOutput.accept(Tools.ICE_SHARD_SHOVEL.get());
                             pOutput.accept(Tools.ICE_SHARD_HOE.get());
+
+                            if (ModList.get().isLoaded("twilightforest")) {
+                                pOutput.accept(Tools.GIANT_ICE_SHARD_SWORD.get());
+                            }
+
                         }
 
                         // Accept items if 'ad_astra' mod is loaded

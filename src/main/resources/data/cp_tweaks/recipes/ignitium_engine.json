@@ -27,7 +27,7 @@
             "item": "ad_astra:engine_frame"
           },
           "F": {
-            "item": "ad_astra:engine_fan"
+            "item": "ad_astra:fan"
           }
         },
         "pattern": [

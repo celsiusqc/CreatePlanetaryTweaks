@@ -1,8 +1,8 @@
 {
-  "type": "ad_astra:crafting_shaped_space_suit",
+  "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "tag": "forge:ingots/steel"
+      "tag": "forge:plates/steel"
     },
     "G": {
       "item": "minecraft:glass_pane"

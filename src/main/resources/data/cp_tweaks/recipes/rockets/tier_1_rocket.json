@@ -5,7 +5,7 @@
       "conditions": [
         {
           "type": "forge:mod_loaded",
-          "modid": "ad_astra"
+          "modid": "cp_tweaks"
         },
         {
           "type": "forge:mod_loaded",
@@ -13,84 +13,39 @@
         },
         {
           "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        },
+        {
+          "type": "forge:mod_loaded",
           "modid": "create"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "alexsmobs"
         }
       ],
       "recipe": {
         "type": "ad_astra:nasa_workbench",
         "ingredients": [
-          {
-            "ingredient": {
-              "item": "ad_astra:rocket_nose_cone"
-            }
-          },
-          {
-            "ingredient": {
-              "tag": "ad_astra_platform:steel_blocks"
-            }
-          },
-          {
-            "ingredient": {
-              "tag": "ad_astra_platform:steel_blocks"
-            }
-          },
-          {
-            "ingredient": {
-              "tag": "ad_astra_platform:steel_blocks"
-            }
-          },
-          {
-            "ingredient": {
-              "tag": "ad_astra_platform:steel_blocks"
-            }
-          },
-          {
-            "ingredient": {
-              "tag": "ad_astra_platform:steel_blocks"
-            }
-          },
-          {
-            "ingredient": {
-              "tag": "ad_astra_platform:steel_blocks"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "cp_tweaks:reinforced_rocket_fin"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "ad_astra:steel_tank"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "ad_astra:steel_tank"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "cp_tweaks:reinforced_rocket_fin"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "cp_tweaks:reinforced_rocket_fin"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "ad_astra:steel_engine"
-            }
-          },
-          {
-            "ingredient": {
-              "item": "cp_tweaks:reinforced_rocket_fin"
-            }
-          }
+          { "item": "ad_astra:rocket_nose_cone" },
+          { "tag": "forge:storage_blocks/steel" },
+          { "tag": "forge:storage_blocks/steel" },
+          { "tag": "forge:storage_blocks/steel" },
+          { "tag": "forge:storage_blocks/steel" },
+          { "tag": "forge:storage_blocks/steel" },
+          { "tag": "forge:storage_blocks/steel" },
+          { "item": "cp_tweaks:reinforced_rocket_fin" },
+          { "item": "ad_astra:steel_tank" },
+          { "item": "ad_astra:steel_tank" },
+          { "item": "cp_tweaks:reinforced_rocket_fin" },
+          { "item": "cp_tweaks:reinforced_rocket_fin" },
+          { "item": "ad_astra:steel_engine" },
+          { "item": "cp_tweaks:reinforced_rocket_fin" }
         ],
-        "output": "ad_astra:tier_1_rocket"
+        "result": {
+          "count": 1,
+          "id": "ad_astra:tier_1_rocket"
+        }
       }
     }
   ]
