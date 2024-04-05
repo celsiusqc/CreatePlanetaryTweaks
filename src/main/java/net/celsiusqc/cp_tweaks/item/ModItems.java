@@ -1,5 +1,6 @@
 package net.celsiusqc.cp_tweaks.item;
 import net.celsiusqc.cp_tweaks.CreatePlanetaryTweaks;
+import net.celsiusqc.cp_tweaks.fluid.ModFluids;
 import net.celsiusqc.cp_tweaks.item.Tooltips.EnderGuardianGuTooltip;
 import net.celsiusqc.cp_tweaks.item.Tooltips.MonstrosityGuTooltip;
 import net.celsiusqc.cp_tweaks.item.Tooltips.UnstableIceShardTooltip;
@@ -72,6 +73,18 @@ public class ModItems {
 
     public static final RegistryObject<Item> WEIRD_SATELLITE = ITEMS.register("weird_satellite",
             () -> new Item(new Item.Properties()));
+
+
+    public static final RegistryObject<Item> ARACHNARCH_VENOM_BOTTLE = ITEMS.register("arachnarch_venom_bottle",
+            () -> new BottleItem(new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(3)));
+
+    public static final RegistryObject<Item> ARACHNARCH_VENOM_BUCKET = ITEMS.register("arachnarch_venom_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_ARACHNARCH_VENOM,
+                    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+//    public static final RegistryObject<Item> ARACHNARCH_VENOM_BUCKET = ITEMS.register("arachnarch_venom_bucket",
+//            () -> new Item(new Item.Properties()));
+
 
 
 

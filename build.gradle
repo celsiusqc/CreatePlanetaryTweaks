@@ -257,6 +257,9 @@ dependencies {
     //Twilight Forest
     implementation fg.deobf("curse.maven:the-twilight-forest-227639:5071019")
 
+    implementation fg.deobf("curse.maven:blue-skies-312918:5010316")
+    implementation fg.deobf("curse.maven:structure-gel-api-378802:5188368")
+
 
 
     //Blur Mod

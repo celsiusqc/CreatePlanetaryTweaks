@@ -49,6 +49,12 @@ public class ModCreativeModTab {
 
                         }
 
+                        if (ModList.get().isLoaded("twilightforest")) {
+                            pOutput.accept(ModItems.ARACHNARCH_VENOM_BOTTLE.get());
+                            pOutput.accept(ModItems.ARACHNARCH_VENOM_BUCKET.get());
+                        }
+
+
 // Accept items if 'create' and 'alexsmobs' mods are loaded
                         if (ModList.get().isLoaded("create") && ModList.get().isLoaded("alexsmobs")) {
                             pOutput.accept(ModItems.VOID_WORM_GU.get());

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "cp_tweaks"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "create:filling",
+        "ingredients": [
+          {
+            "item": "minecraft:glass_bottle"
+          },
+          {
+            "amount": 250,
+            "fluidTag": "forge:arachnarch_venom"
+          }
+        ],
+        "results": [
+          {
+            "item": "cp_tweaks:arachnarch_venom_bottle"
+          }
+        ]
+      }
+    }
+  ]
+}

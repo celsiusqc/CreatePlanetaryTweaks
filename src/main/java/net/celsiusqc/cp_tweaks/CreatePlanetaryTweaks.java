@@ -1,6 +1,8 @@
 package net.celsiusqc.cp_tweaks;
 
 import net.celsiusqc.cp_tweaks.base.block.ModBlocks;
+import net.celsiusqc.cp_tweaks.fluid.ModFluidTypes;
+import net.celsiusqc.cp_tweaks.fluid.ModFluids;
 import net.celsiusqc.cp_tweaks.item.*;
 import net.celsiusqc.cp_tweaks.loot.ModLootModifiers;
 import net.minecraftforge.api.distmarker.Dist;
@@ -34,6 +36,8 @@ public class CreatePlanetaryTweaks {
         ZincTools.register(modEventBus);
         ModLootModifiers.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModFluids.register(modEventBus);
+        ModFluidTypes.register(modEventBus);
 
         GeckoLib.initialize();
 
