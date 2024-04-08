@@ -22,7 +22,7 @@
         "results": [
           {
             "item": "ad_astra:ice_shard",
-            "count": 1
+            "count": 2
           },
           {
             "item": "ad_astra:ice_shard",
@@ -42,7 +42,7 @@
           {
             "item": "create:experience_nugget",
             "count": 1,
-            "chance": 0.05
+            "chance": 0.75
           }
         ],
         "processingTime": 300
