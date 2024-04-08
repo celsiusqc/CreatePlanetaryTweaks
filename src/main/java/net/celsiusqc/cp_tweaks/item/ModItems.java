@@ -1,10 +1,7 @@
 package net.celsiusqc.cp_tweaks.item;
 import net.celsiusqc.cp_tweaks.CreatePlanetaryTweaks;
 import net.celsiusqc.cp_tweaks.fluid.ModFluids;
-import net.celsiusqc.cp_tweaks.item.Tooltips.EnderGuardianGuTooltip;
-import net.celsiusqc.cp_tweaks.item.Tooltips.MonstrosityGuTooltip;
-import net.celsiusqc.cp_tweaks.item.Tooltips.UnstableIceShardTooltip;
-import net.celsiusqc.cp_tweaks.item.Tooltips.VoidWormGuTooltip;
+import net.celsiusqc.cp_tweaks.item.Tooltips.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -72,11 +69,11 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> WEIRD_SATELLITE = ITEMS.register("weird_satellite",
-            () -> new Item(new Item.Properties()));
+            () -> new WeirdSatelliteTooltip(new Item.Properties().stacksTo(1).fireResistant()));
 
 
     public static final RegistryObject<Item> ARACHNARCH_VENOM_BOTTLE = ITEMS.register("arachnarch_venom_bottle",
-            () -> new BottleItem(new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(3)));
+            () -> new ArachnarchVenomBottleTooltip(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE).stacksTo(3)));
 
     public static final RegistryObject<Item> ARACHNARCH_VENOM_BUCKET = ITEMS.register("arachnarch_venom_bucket",
             () -> new BucketItem(ModFluids.SOURCE_ARACHNARCH_VENOM,
@@ -85,6 +82,10 @@ public class ModItems {
 //    public static final RegistryObject<Item> ARACHNARCH_VENOM_BUCKET = ITEMS.register("arachnarch_venom_bucket",
 //            () -> new Item(new Item.Properties()));
 
+
+
+    public static final RegistryObject<Item> STARLIT_TREE_BARK = ITEMS.register("starlit_tree_bark",
+            () -> new StarlitTreeBarkTooltip(new Item.Properties().stacksTo(16)));
 
 
 

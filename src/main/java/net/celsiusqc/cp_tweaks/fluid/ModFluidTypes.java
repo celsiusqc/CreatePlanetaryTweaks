@@ -24,12 +24,12 @@ public class ModFluidTypes {
 
 
     public static final RegistryObject<FluidType> ARACHNARCH_VENOM_TYPE = FLUID_TYPES.register("arachnarch_venom_fluid",
-            () -> new BaseFluidType(
+            () -> new BaseFluidTypeVenom(
                     ARACHNARCH_VENOM_STILL_RL,
                     ARACHNARCH_VENOM_FLOWING_RL,
                     ARACHNARCH_VENOM_RL,
                     0xFFFFFFFF,
-                    colorVecFromHex(0xeac528),  //Values are divided by 255
+                    colorVecFromHex(0x3F2F96),  //Values are divided by 255
                     FluidType.Properties.create()
                             .lightLevel(15)
                             .density(15)

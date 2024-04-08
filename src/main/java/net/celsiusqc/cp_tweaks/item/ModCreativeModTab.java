@@ -49,9 +49,10 @@ public class ModCreativeModTab {
 
                         }
 
-                        if (ModList.get().isLoaded("twilightforest")) {
+                        if (ModList.get().isLoaded("blue_skies")) {
                             pOutput.accept(ModItems.ARACHNARCH_VENOM_BOTTLE.get());
                             pOutput.accept(ModItems.ARACHNARCH_VENOM_BUCKET.get());
+                            pOutput.accept(ModItems.STARLIT_TREE_BARK.get());
                         }
 
 

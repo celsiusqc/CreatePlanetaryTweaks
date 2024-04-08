@@ -134,6 +134,9 @@
   "item.cp_tweaks.unstable_ice_shard.tooltip": "This item can be obtained by Killing The Harbinger from the Cataclysm mod.",
   "item.cp_tweaks.monstrosity_gu.tooltip": "This item is obtained by Killing the Netherite Monstrosity from the Cataclysm mod.",
   "item.cp_tweaks.ender_guardian_gu.tooltip": "This item is obtained by Killing the Ender Guardian Boss from the Cataclysm mod.",
+  "item.cp_tweaks.arachnarch_venom_bottle.tooltip": "This item has a random chance of being obtained by interacting with the Arachnarch Boss from the Blue Skies mod with a glass bottle.",
+  "item.cp_tweaks.starlit_tree_bark.tooltip": "This item has a random chance of being obtained by interacting with the Nature Dungeon Boss from the Blue Skies mod with an axe.",
+  "item.cp_tweaks.weird_satellite.tooltip": "This item drops from the Starviewer Armored Giant that spawns at the Final Castle of the Twilight Forest.",
 
   "item.holy.tooltip": "This item induces holy damage to the undead.",
 
@@ -141,6 +144,8 @@
   "item.cp_tweaks.arachnarch_venom_bucket": "Arachnarch Venom Bucket",
   "item.cp_tweaks.arachnarch_venom_bottle": "Arachnarch Venom Bottle",
   "fluid_type.cp_tweaks.arachnarch_venom_fluid": "Arachnarch Venom",
+
+  "item.cp_tweaks.starlit_tree_bark": "Starlit Tree Bark",
 
 
   "creativetab.cp_tweaks_tab": "Create Planetary Tweaks",

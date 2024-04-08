@@ -6,6 +6,8 @@ import net.minecraft.client.Camera;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.FogRenderer;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MoverType;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -27,15 +29,15 @@ import java.util.function.Consumer;
  * Change by: Kaupenjoe
  * Added overlayTexture and tintColor as well. Also converts tint color into fog color
  */
-public class BaseFluidType extends FluidType {
+public class BaseFluidTypeVenom extends FluidType {
     private final ResourceLocation stillTexture;
     private final ResourceLocation flowingTexture;
     private final ResourceLocation overlayTexture;
     private final int tintColor;
     private final Vector3f fogColor;
 
-    public BaseFluidType(final ResourceLocation stillTexture, final ResourceLocation flowingTexture, final ResourceLocation overlayTexture,
-                         final int tintColor, final Vector3f fogColor, final Properties properties) {
+    public BaseFluidTypeVenom(final ResourceLocation stillTexture, final ResourceLocation flowingTexture, final ResourceLocation overlayTexture,
+                              final int tintColor, final Vector3f fogColor, final Properties properties) {
         super(properties);
         this.stillTexture = stillTexture;
         this.flowingTexture = flowingTexture;
@@ -127,7 +129,9 @@ public class BaseFluidType extends FluidType {
             entity.setDeltaMovement(vec34.x, (double) 0.3F, vec34.z);
         }
 
-        entity.lavaHurt();
+        //entity.lavaHurt();
+        entity.addEffect(new MobEffectInstance(MobEffects.HARM, 1, 0));
+        entity.addEffect(new MobEffectInstance(MobEffects.POISON, 180, 3));
         return true;
     }
 
