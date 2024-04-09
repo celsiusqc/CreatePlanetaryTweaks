@@ -1,0 +1,58 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "cp_tweaks"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "cataclysm"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "alexsmobs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "create:mechanical_crafting",
+        "acceptMirrored": false,
+        "key": {
+          "S": {
+            "item": "ad_astra_rocketed:tier_6_rocket"
+          },
+          "A": {
+            "item": "cp_tweaks:starlit_tree_bark"
+          }
+        },
+        "pattern": [
+          "  AAA  ",
+          " AAAAA ",
+          "AAAAAAA",
+          "AAASAAA",
+          "AAAAAAA",
+          " AAAAA ",
+          "  AAA  "
+        ],
+        "result": {
+          "count": 1,
+          "item": "ad_astra_rocketed:tier_7_rocket"
+        }
+      }
+    }
+  ]
+}

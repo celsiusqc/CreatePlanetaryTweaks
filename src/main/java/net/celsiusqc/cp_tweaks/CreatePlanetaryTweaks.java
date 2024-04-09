@@ -1,10 +1,12 @@
 package net.celsiusqc.cp_tweaks;
 
 import net.celsiusqc.cp_tweaks.base.block.ModBlocks;
+import net.celsiusqc.cp_tweaks.entity.ModEntities;
 import net.celsiusqc.cp_tweaks.fluid.ModFluidTypes;
 import net.celsiusqc.cp_tweaks.fluid.ModFluids;
 import net.celsiusqc.cp_tweaks.item.*;
 import net.celsiusqc.cp_tweaks.loot.ModLootModifiers;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -16,6 +18,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import software.bernie.geckolib.GeckoLib;
+
+import java.util.Locale;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CreatePlanetaryTweaks.MOD_ID)
@@ -38,6 +42,7 @@ public class CreatePlanetaryTweaks {
         ModBlocks.register(modEventBus);
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         GeckoLib.initialize();
 
@@ -74,4 +79,9 @@ public class CreatePlanetaryTweaks {
 
         }
     }
+
+    public static ResourceLocation prefix(String name) {
+        return new ResourceLocation(MOD_ID, name.toLowerCase(Locale.ROOT));
+    }
+
 }

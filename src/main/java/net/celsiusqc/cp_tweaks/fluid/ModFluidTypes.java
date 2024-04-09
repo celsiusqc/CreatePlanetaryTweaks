@@ -17,7 +17,7 @@ public class ModFluidTypes {
     //Gold
     public static final ResourceLocation ARACHNARCH_VENOM_STILL_RL = new ResourceLocation(CreatePlanetaryTweaks.MOD_ID, "block/fluid/arachnarch_venom/still");
     public static final ResourceLocation ARACHNARCH_VENOM_FLOWING_RL = new ResourceLocation(CreatePlanetaryTweaks.MOD_ID, "block/fluid/arachnarch_venom/flowing");
-    public static final ResourceLocation ARACHNARCH_VENOM_RL = new ResourceLocation(CreatePlanetaryTweaks.MOD_ID, "misc/in_soap_water");
+    public static final ResourceLocation ARACHNARCH_VENOM_RL = new ResourceLocation(CreatePlanetaryTweaks.MOD_ID, "block/fluid/arachnarch_venom/flowing");
 
     public static final DeferredRegister<FluidType> FLUID_TYPES =
             DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, CreatePlanetaryTweaks.MOD_ID);
