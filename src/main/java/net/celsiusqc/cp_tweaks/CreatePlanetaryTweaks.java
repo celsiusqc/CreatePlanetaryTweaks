@@ -17,6 +17,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import software.bernie.geckolib.GeckoLib;
 
 import java.util.Locale;
@@ -28,6 +30,8 @@ public class CreatePlanetaryTweaks {
 
     public static final String MOD_ID = "cp_tweaks";
     public static final String ARMOR_DIR = MOD_ID + ":textures/models/armor/";
+
+    public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
     public CreatePlanetaryTweaks() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
