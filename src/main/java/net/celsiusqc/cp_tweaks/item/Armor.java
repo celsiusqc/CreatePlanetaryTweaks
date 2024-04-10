@@ -2,6 +2,7 @@ package net.celsiusqc.cp_tweaks.item;
 
 import net.celsiusqc.cp_tweaks.CreatePlanetaryTweaks;
 import net.celsiusqc.cp_tweaks.base.*;
+import net.celsiusqc.cp_tweaks.base.armors.*;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;

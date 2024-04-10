@@ -6,8 +6,6 @@ import net.celsiusqc.cp_tweaks.entity.custom.StarviewerGiant;
 import net.celsiusqc.cp_tweaks.fluid.ModFluidTypes;
 import net.celsiusqc.cp_tweaks.fluid.ModFluids;
 import net.celsiusqc.cp_tweaks.item.*;
-import net.celsiusqc.cp_tweaks.loot.ModLootModifiers;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -44,7 +42,6 @@ public class CreatePlanetaryTweaks {
         Tools.register(modEventBus);
         Armor.register(modEventBus);
         ZincTools.register(modEventBus);
-        ModLootModifiers.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
@@ -101,10 +98,6 @@ public class CreatePlanetaryTweaks {
         public static void onClientSetup(FMLClientSetupEvent event) {
 
         }
-    }
-
-    public static ResourceLocation prefix(String name) {
-        return new ResourceLocation(MOD_ID, name.toLowerCase(Locale.ROOT));
     }
 
 }

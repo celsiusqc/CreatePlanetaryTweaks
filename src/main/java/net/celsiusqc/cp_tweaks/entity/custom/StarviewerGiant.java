@@ -20,8 +20,12 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import twilightforest.entity.monster.ArmoredGiant;
+
+import java.util.Random;
 
 
 public class StarviewerGiant extends ArmoredGiant {
@@ -31,6 +35,7 @@ public class StarviewerGiant extends ArmoredGiant {
 
     public StarviewerGiant(EntityType<? extends StarviewerGiant> type, Level world) {
         super(type, world);
+        this.setPersistenceRequired();
     }
 
     @Override
@@ -66,19 +71,44 @@ public class StarviewerGiant extends ArmoredGiant {
                 .add(Attributes.MAX_HEALTH, 120.0D) // Example: Increased max health
                 .add(Attributes.MOVEMENT_SPEED, 0.35D) // Example: Increased movement speed
                 .add(Attributes.ATTACK_DAMAGE, 10.0D) // Example: Increased attack damage
-                .add(Attributes.FOLLOW_RANGE, 50.0D); // Example: Increased follow range
+                .add(Attributes.FOLLOW_RANGE, 50.0D)  // Example: Increased follow range
+
+
+
+                ;
+
     }
 
 
+    //Boss Equipment
     @Override
     protected void populateDefaultEquipmentSlots(RandomSource random, DifficultyInstance difficulty) {
         super.populateDefaultEquipmentSlots(random, difficulty);
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Tools.GIANT_ICE_SHARD_AXE.get()));
-        this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(ModItems.GIANT_WEIRD_SATELLITE.get()));
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Armor.ICE_SHARD_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Armor.ICE_SHARD_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Armor.ICE_SHARD_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Armor.ICE_SHARD_BOOTS.get()));
+        this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(ModItems.WEIRD_SATELLITE.get()));
+
+        EquipmentSlot[] slots = new EquipmentSlot[] {
+                EquipmentSlot.MAINHAND,
+                EquipmentSlot.HEAD,
+                EquipmentSlot.CHEST,
+                EquipmentSlot.LEGS,
+                EquipmentSlot.FEET
+        };
+
+        for (EquipmentSlot slot : slots) {
+            // Create a new ItemStack for armor piece
+            ItemStack armorPiece = switch (slot) {
+                case MAINHAND -> new ItemStack(Tools.GIANT_ICE_SHARD_AXE.get());
+                case HEAD -> new ItemStack(Armor.ICE_SHARD_HELMET.get());
+                case CHEST -> new ItemStack(Armor.ICE_SHARD_CHESTPLATE.get());
+                case LEGS -> new ItemStack(Armor.ICE_SHARD_LEGGINGS.get());
+                case FEET -> new ItemStack(Armor.ICE_SHARD_BOOTS.get());
+                default -> new ItemStack(Items.AIR);
+            };
+
+            armorPiece = EnchantmentHelper.enchantItem(random, armorPiece, 30, true);
+
+            this.setItemSlot(slot, armorPiece);
+        }
     }
 
 
@@ -101,11 +131,51 @@ public class StarviewerGiant extends ArmoredGiant {
         this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
     }
 
+
+    //Loot Drop
     @Override
     public void die(DamageSource cause) {
         super.die(cause);
+
+        // Remove the boss bar for all players on death
         this.bossEvent.removeAllPlayers();
+
+        Random random = new Random();
+
+        // Always drop the mainhand and offhand items with random durability if applicable
+        dropItemWithRandomDurability(random, EquipmentSlot.MAINHAND);
+        dropItemWithRandomDurability(random, EquipmentSlot.OFFHAND);
+
+        // Randomly drop one of the four armor pieces
+        EquipmentSlot[] armorSlots = new EquipmentSlot[] {
+                EquipmentSlot.HEAD,
+                EquipmentSlot.CHEST,
+                EquipmentSlot.LEGS,
+                EquipmentSlot.FEET
+        };
+
+        // Select a random armor slot to drop
+        EquipmentSlot armorSlotToDrop = armorSlots[random.nextInt(armorSlots.length)];
+        dropItemWithRandomDurability(random, armorSlotToDrop);
     }
+
+    private void dropItemWithRandomDurability(Random random, EquipmentSlot slot) {
+        ItemStack droppedItem = this.getItemBySlot(slot);
+        if (!droppedItem.isEmpty()) {
+            if (droppedItem.isDamageableItem()) {
+                // Apply random durability if the item has durability
+                int damage = 200 + random.nextInt(Math.max(droppedItem.getMaxDamage() - 200, 1));
+                droppedItem.setDamageValue(damage);
+            }
+            // Spawn the item in the world at the entity's location
+            this.spawnAtLocation(droppedItem, 0.0F);
+            // Clear the slot so it's not dropped again by the default logic
+            this.setItemSlot(slot, ItemStack.EMPTY);
+        }
+    }
+
+
+
 
 
 

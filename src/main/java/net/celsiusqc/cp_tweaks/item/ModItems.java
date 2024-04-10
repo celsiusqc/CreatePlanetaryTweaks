@@ -1,8 +1,10 @@
 package net.celsiusqc.cp_tweaks.item;
 import net.celsiusqc.cp_tweaks.CreatePlanetaryTweaks;
+import net.celsiusqc.cp_tweaks.entity.ModEntities;
 import net.celsiusqc.cp_tweaks.fluid.ModFluids;
 import net.celsiusqc.cp_tweaks.item.Tooltips.*;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -70,8 +72,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> WEIRD_SATELLITE = ITEMS.register("weird_satellite",
             () -> new WeirdSatelliteTooltip(new Item.Properties().stacksTo(1).fireResistant()));
-    public static final RegistryObject<Item> GIANT_WEIRD_SATELLITE = ITEMS.register("giant_weird_satellite",
-            () -> new WeirdSatelliteTooltip(new Item.Properties().stacksTo(1).fireResistant()));
+
+    public static final RegistryObject<Item> STARVIEWER_GIANT_SPAWN_EGG = ITEMS.register("starviewer_giant_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.STARVIEWER_GIANT, 0x0000FF, 0x87CEEB, new Item.Properties().stacksTo(16))
+    );
+
 
 
     public static final RegistryObject<Item> ARACHNARCH_VENOM_BOTTLE = ITEMS.register("arachnarch_venom_bottle",
@@ -80,9 +85,6 @@ public class ModItems {
     public static final RegistryObject<Item> ARACHNARCH_VENOM_BUCKET = ITEMS.register("arachnarch_venom_bucket",
             () -> new BucketItem(ModFluids.SOURCE_ARACHNARCH_VENOM,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-
-//    public static final RegistryObject<Item> ARACHNARCH_VENOM_BUCKET = ITEMS.register("arachnarch_venom_bucket",
-//            () -> new Item(new Item.Properties()));
 
 
 

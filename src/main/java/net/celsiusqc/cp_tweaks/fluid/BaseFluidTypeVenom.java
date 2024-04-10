@@ -129,16 +129,16 @@ public class BaseFluidTypeVenom extends FluidType {
             entity.setDeltaMovement(vec34.x, (double) 0.3F, vec34.z);
         }
 
-            //When an entity interacts with the fluid physically, do this
+        //When an entity interacts with the fluid physically, do this
         //entity.lavaHurt();
-        entity.addEffect(new MobEffectInstance(MobEffects.HARM, 1, 0));
+        //entity.addEffect(new MobEffectInstance(MobEffects.HARM, 1, 0));
         entity.addEffect(new MobEffectInstance(MobEffects.POISON, 180, 3));
         return true;
     }
 
     @Override
     public void setItemMovement(ItemEntity entity) {
-        entity.lavaHurt();
+        //entity.lavaHurt();
         Vec3 vec3 = entity.getDeltaMovement();
         entity.setDeltaMovement(vec3.x * (double)0.95F, vec3.y + (double)(vec3.y < (double)0.06F ? 5.0E-4F : 0.0F), vec3.z * (double)0.95F);
     }

@@ -1,4 +1,4 @@
-package net.celsiusqc.cp_tweaks.base;
+package net.celsiusqc.cp_tweaks.base.armors;
 
 import net.celsiusqc.cp_tweaks.item.client.IceShardArmorRenderer;
 import net.minecraft.client.model.HumanoidModel;
