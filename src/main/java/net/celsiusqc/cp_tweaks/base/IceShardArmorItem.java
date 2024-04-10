@@ -43,13 +43,13 @@ public class IceShardArmorItem extends ArmorItem implements GeoItem {
 
 
     private PlayState predicate(AnimationState animationState) {
-        animationState.getController().setAnimation(RawAnimation.begin().then("idle", Animation.LoopType.LOOP));
+        //animationState.getController().setAnimation(RawAnimation.begin().then("idle", Animation.LoopType.LOOP));
         return PlayState.CONTINUE;
     }
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
-        controllerRegistrar.add(new AnimationController(this, "controller", 0, this::predicate));
+        //controllerRegistrar.add(new AnimationController(this, "controller", 0, this::predicate));
     }
 
     @Override

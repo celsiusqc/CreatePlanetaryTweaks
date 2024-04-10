@@ -20,8 +20,10 @@ import net.minecraftforge.fml.common.Mod;
 import twilightforest.client.JappaPackReloadListener;
 import twilightforest.client.MagicPaintingTextureManager;
 import twilightforest.client.renderer.entity.NoopRenderer;
+import twilightforest.client.renderer.entity.TFGiantRenderer;
 import twilightforest.compat.jei.renderers.EntityRenderer;
 import twilightforest.entity.TFPart;
+import twilightforest.init.TFEntities;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
@@ -37,41 +39,11 @@ public class ClientSetup {
         MagicPaintingTextureManager.instance = new MagicPaintingTextureManager(Minecraft.getInstance().getTextureManager());
         event.registerReloadListener(MagicPaintingTextureManager.instance);
     }
-
-
     @SubscribeEvent
     public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-        BooleanSupplier jappa = JappaPackReloadListener.INSTANCE.uncachedJappaPackCheck();
-
-        event.registerEntityRenderer(ModEntities.STARVIEWER_GIANT.get(), StarviewerGiantRenderer::new);
-
-
+        event.registerEntityRenderer(ModEntities.STARVIEWER_GIANT.get(), TFGiantRenderer::new);
     }
 
-    private static Field field_EntityRenderersEvent$AddLayers_renderers;
-    @SubscribeEvent
-    @SuppressWarnings("unchecked")
-    public static void attachRenderLayers(EntityRenderersEvent.AddLayers event) {
-        if (field_EntityRenderersEvent$AddLayers_renderers == null) {
-            try {
-                field_EntityRenderersEvent$AddLayers_renderers = EntityRenderersEvent.AddLayers.class.getDeclaredField("renderers");
-                field_EntityRenderersEvent$AddLayers_renderers.setAccessible(true);
-            } catch (NoSuchFieldException e) {
-                e.printStackTrace();
-            }
-        }
-        if (field_EntityRenderersEvent$AddLayers_renderers != null) {
-            event.getSkins().forEach(renderer -> {
-                LivingEntityRenderer<Player, EntityModel<Player>> skin = event.getSkin(renderer);
-                attachRenderLayers(Objects.requireNonNull(skin));
-            });
-            try {
-                ((Map<EntityType<?>, EntityRenderer<?>>) field_EntityRenderersEvent$AddLayers_renderers.get(event)).values().stream().
-                        filter(LivingEntityRenderer.class::isInstance).map(LivingEntityRenderer.class::cast).forEach(ClientSetup::attachRenderLayers);
-            } catch (IllegalAccessException e) {
-                e.printStackTrace();
-            }
-        }
-    }
+
 
 }

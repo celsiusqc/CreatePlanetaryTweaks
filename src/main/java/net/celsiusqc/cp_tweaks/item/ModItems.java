@@ -70,6 +70,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> WEIRD_SATELLITE = ITEMS.register("weird_satellite",
             () -> new WeirdSatelliteTooltip(new Item.Properties().stacksTo(1).fireResistant()));
+    public static final RegistryObject<Item> GIANT_WEIRD_SATELLITE = ITEMS.register("giant_weird_satellite",
+            () -> new WeirdSatelliteTooltip(new Item.Properties().stacksTo(1).fireResistant()));
 
 
     public static final RegistryObject<Item> ARACHNARCH_VENOM_BOTTLE = ITEMS.register("arachnarch_venom_bottle",

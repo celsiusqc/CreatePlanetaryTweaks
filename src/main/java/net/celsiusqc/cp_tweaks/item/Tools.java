@@ -140,6 +140,8 @@ public class Tools {
 
     public static final RegistryObject<SwordItem> GIANT_ICE_SHARD_SWORD = ITEMS.register("giant_ice_shard_sword",
             () -> new SwordItem(ToolTiers.ICE_SHARD, 3, -2.4f, new Item.Properties()));
+    public static final RegistryObject<SwordItem> GIANT_ICE_SHARD_AXE = ITEMS.register("giant_ice_shard_axe",
+            () -> new SwordItem(ToolTiers.ICE_SHARD, 3, -2.4f, new Item.Properties()));
 
 
 

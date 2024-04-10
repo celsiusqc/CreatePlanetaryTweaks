@@ -2,6 +2,7 @@ package net.celsiusqc.cp_tweaks;
 
 import net.celsiusqc.cp_tweaks.base.block.ModBlocks;
 import net.celsiusqc.cp_tweaks.entity.ModEntities;
+import net.celsiusqc.cp_tweaks.entity.custom.StarviewerGiant;
 import net.celsiusqc.cp_tweaks.fluid.ModFluidTypes;
 import net.celsiusqc.cp_tweaks.fluid.ModFluids;
 import net.celsiusqc.cp_tweaks.item.*;
@@ -10,6 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -37,7 +39,7 @@ public class CreatePlanetaryTweaks {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModTab.register(modEventBus);
-
+        modEventBus.addListener(this::setup);
         ModItems.register(modEventBus);
         Tools.register(modEventBus);
         Armor.register(modEventBus);
@@ -62,6 +64,23 @@ public class CreatePlanetaryTweaks {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 
+    }
+
+    private void setup(final FMLCommonSetupEvent event) {
+        // existing common setup...
+
+        // additional setup, if any...
+    }
+
+    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+    public static class ModEvents {
+        @SubscribeEvent
+        public static void onAttributeCreate(EntityAttributeCreationEvent event) {
+            // This is where you would register your StarviewerGiant's attributes.
+            event.put(ModEntities.STARVIEWER_GIANT.get(), StarviewerGiant.createAttributes().build());
+        }
+
+        // other mod event subscribers...
     }
 
     // Add the example block item to the building blocks tab

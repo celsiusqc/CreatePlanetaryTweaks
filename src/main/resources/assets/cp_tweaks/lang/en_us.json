@@ -113,6 +113,8 @@
   "item.cp_tweaks.ice_shard_hoe": "Ice Shard Hoe",
 
   "item.cp_tweaks.giant_ice_shard_sword": "Giant Ice Shard Sword",
+  "item.cp_tweaks.giant_ice_shard_axe": "Giant Ice Shard Axe",
+  "item.cp_tweaks.giant_weird_satellite": "Giant Weird Satellite",
 
   "item.cp_tweaks.reinforced_rocket_fin": "Reinforced Rocket Fin",
   "item.cp_tweaks.ignitium_sheet": "Ignitium Sheet",
@@ -159,8 +161,7 @@
   "message.too_flimsy": "Your axe is too flimsy to chip away starlit bark. Repair it to obtain the strongest bark in the galaxy.",
   "message.incorrect_axe": "This axe cannot penetrate such strong wood. Try a Stabilized Ice Shard tool to really dig into that bark.",
   "message.unsuitable_tool": "This tool is not suitable for harvesting starlit bark.",
-  "message.needs_tool": "You'll need a proper tool to harvest starlit bark."
+  "message.needs_tool": "You'll need a proper tool to harvest starlit bark.",
 
-
-
+  "entity.cp_tweaks.starviewer_giant": "Starviewer Giant"
 }
