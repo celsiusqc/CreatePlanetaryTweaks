@@ -252,13 +252,17 @@ dependencies {
     implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.20:4.2')
 
     //Ad Astra Rocketed
-    implementation fg.deobf("curse.maven:ad-astra-rocketed-996980:5237010")
+    implementation fg.deobf("curse.maven:ad-astra-rocketed-996980:5245376")
 
     //Twilight Forest
     implementation fg.deobf("curse.maven:the-twilight-forest-227639:5071019")
 
+    //Blue Skies
     implementation fg.deobf("curse.maven:blue-skies-312918:5010316")
     implementation fg.deobf("curse.maven:structure-gel-api-378802:5188368")
+
+    //Useful Spyglass
+    implementation fg.deobf("curse.maven:useful-spyglass-840027:5245771")
 
 
 

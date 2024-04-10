@@ -42,6 +42,7 @@ public class ModCreativeModTab {
 
                                 if (ModList.get().isLoaded("twilightforest")) {
                                     pOutput.accept(ModItems.WEIRD_SATELLITE.get());
+                                    pOutput.accept(ModItems.GIANT_WEIRD_SATELLITE.get());
                                 }
 
 
@@ -190,6 +191,7 @@ public class ModCreativeModTab {
 
                             if (ModList.get().isLoaded("twilightforest")) {
                                 pOutput.accept(Tools.GIANT_ICE_SHARD_SWORD.get());
+                                pOutput.accept(Tools.GIANT_ICE_SHARD_AXE.get());
                             }
 
                         }
