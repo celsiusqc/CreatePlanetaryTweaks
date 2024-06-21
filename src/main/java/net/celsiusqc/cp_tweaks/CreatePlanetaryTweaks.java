@@ -35,6 +35,10 @@ public class CreatePlanetaryTweaks {
     public CreatePlanetaryTweaks() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        // Register the configuration and load it
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CreatePlanetaryTweaksConfig.CONFIG);
+        CreatePlanetaryTweaksConfig.loadConfig(CreatePlanetaryTweaksConfig.CONFIG, FMLPaths.CONFIGDIR.get().resolve("createplanetarytweaks.toml").toString());
+
         ModCreativeModTab.register(modEventBus);
         modEventBus.addListener(this::setup);
         ModItems.register(modEventBus);
@@ -51,10 +55,6 @@ public class CreatePlanetaryTweaks {
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
 
-        // Register the configuration and load it
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CreatePlanetaryTweaksConfig.CONFIG);
-        CreatePlanetaryTweaksConfig.loadConfig(CreatePlanetaryTweaksConfig.CONFIG, FMLPaths.CONFIGDIR.get().resolve("createplanetarytweaks.toml").toString());
-
         MinecraftForge.EVENT_BUS.register(this);
     }
 
@@ -70,7 +70,7 @@ public class CreatePlanetaryTweaks {
     public static class ModEvents {
         @SubscribeEvent
         public static void onAttributeCreate(EntityAttributeCreationEvent event) {
-            if (CreatePlanetaryTweaksConfig.isStarlitGiantEnabled()) {
+            if (CreatePlanetaryTweaksConfig.isStarlitGiantEnabled() && ModEntities.STARVIEWER_GIANT != null) {
                 event.put(ModEntities.STARVIEWER_GIANT.get(), StarviewerGiant.createAttributes().build());
             }
         }
