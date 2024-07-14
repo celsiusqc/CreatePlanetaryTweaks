@@ -1,7 +1,6 @@
 package net.celsiusqc.cp_tweaks;
 
 import net.celsiusqc.cp_tweaks.base.block.ModBlocks;
-import net.celsiusqc.cp_tweaks.config.CreatePlanetaryTweaksConfig;
 import net.celsiusqc.cp_tweaks.entity.ModEntities;
 import net.celsiusqc.cp_tweaks.entity.custom.StarviewerGiant;
 import net.celsiusqc.cp_tweaks.fluid.ModFluidTypes;
@@ -9,8 +8,6 @@ import net.celsiusqc.cp_tweaks.fluid.ModFluids;
 import net.celsiusqc.cp_tweaks.item.*;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.ModLoadingContext;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -23,10 +20,14 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import software.bernie.geckolib.GeckoLib;
-import net.minecraftforge.fml.loading.FMLPaths;
 
+import java.util.Locale;
+
+// The value here should match an entry in the META-INF/mods.toml file
 @Mod(CreatePlanetaryTweaks.MOD_ID)
 public class CreatePlanetaryTweaks {
+
+
     public static final String MOD_ID = "cp_tweaks";
     public static final String ARMOR_DIR = MOD_ID + ":textures/models/armor/";
 
@@ -34,10 +35,6 @@ public class CreatePlanetaryTweaks {
 
     public CreatePlanetaryTweaks() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        // Register the configuration and load it
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CreatePlanetaryTweaksConfig.CONFIG);
-        CreatePlanetaryTweaksConfig.loadConfig(CreatePlanetaryTweaksConfig.CONFIG, FMLPaths.CONFIGDIR.get().resolve("createplanetarytweaks.toml").toString());
 
         ModCreativeModTab.register(modEventBus);
         modEventBus.addListener(this::setup);
@@ -52,44 +49,55 @@ public class CreatePlanetaryTweaks {
 
         GeckoLib.initialize();
 
+
+
         modEventBus.addListener(this::commonSetup);
-        modEventBus.addListener(this::addCreative);
 
         MinecraftForge.EVENT_BUS.register(this);
+        modEventBus.addListener(this::addCreative);
+    }
+
+
+
+    private void commonSetup(final FMLCommonSetupEvent event) {
+
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-        // Setup code
-    }
+        // existing common setup...
 
-    private void commonSetup(final FMLCommonSetupEvent event) {
-        // Common setup code
+        // additional setup, if any...
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ModEvents {
         @SubscribeEvent
         public static void onAttributeCreate(EntityAttributeCreationEvent event) {
-            if (CreatePlanetaryTweaksConfig.isStarlitGiantEnabled() && ModEntities.STARVIEWER_GIANT != null) {
-                event.put(ModEntities.STARVIEWER_GIANT.get(), StarviewerGiant.createAttributes().build());
-            }
+            // This is where you would register your StarviewerGiant's attributes.
+            event.put(ModEntities.STARVIEWER_GIANT.get(), StarviewerGiant.createAttributes().build());
         }
+
+        // other mod event subscribers...
     }
 
+    // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        // Add items to creative tab
+
     }
 
+    // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        // Server starting event
+
     }
 
+    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            // Client setup event
+
         }
     }
+
 }
