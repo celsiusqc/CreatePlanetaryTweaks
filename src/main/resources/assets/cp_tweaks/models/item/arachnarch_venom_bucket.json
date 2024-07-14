@@ -1,9 +1,0 @@
-{
-  "parent": "forge:item/bucket",
-  "loader": "forge:fluid_container",
-  "textures": {
-    "base": "item/bucket",
-    "fluid": "cp_tweaks:item/buckets/drip_bucket"
-  },
-  "fluid": "cp_tweaks:arachnarch_venom"
-}
