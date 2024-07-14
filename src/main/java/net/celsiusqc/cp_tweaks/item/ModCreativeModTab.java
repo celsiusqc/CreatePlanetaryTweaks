@@ -42,7 +42,7 @@ public class ModCreativeModTab {
 
                                 if (ModList.get().isLoaded("twilightforest")) {
                                     pOutput.accept(ModItems.WEIRD_SATELLITE.get());
-                                    pOutput.accept(ModItems.STARVIEWER_GIANT_SPAWN_EGG.get());
+                                    //pOutput.accept(ModItems.STARVIEWER_GIANT_SPAWN_EGG.get());            //////////////////////////////////// DISABLED CUSTOM ENTITY FROM TWILIGHT FOREST RENDERER //////////////////////////////////////////////
                                 }
 
 

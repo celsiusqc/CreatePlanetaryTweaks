@@ -1,6 +1,5 @@
 package net.celsiusqc.cp_tweaks.item;
 import net.celsiusqc.cp_tweaks.CreatePlanetaryTweaks;
-import net.celsiusqc.cp_tweaks.entity.ModEntities;
 import net.celsiusqc.cp_tweaks.fluid.ModFluids;
 import net.celsiusqc.cp_tweaks.item.Tooltips.*;
 import net.minecraft.world.item.*;
@@ -73,9 +72,9 @@ public class ModItems {
     public static final RegistryObject<Item> WEIRD_SATELLITE = ITEMS.register("weird_satellite",
             () -> new WeirdSatelliteTooltip(new Item.Properties().stacksTo(1).fireResistant()));
 
-    public static final RegistryObject<Item> STARVIEWER_GIANT_SPAWN_EGG = ITEMS.register("starviewer_giant_spawn_egg",
-            () -> new ForgeSpawnEggItem(ModEntities.STARVIEWER_GIANT, 0x0000FF, 0x87CEEB, new Item.Properties().stacksTo(16))
-    );
+//    public static final RegistryObject<Item> STARVIEWER_GIANT_SPAWN_EGG = ITEMS.register("starviewer_giant_spawn_egg",    //////////////////////////////////// DISABLED CUSTOM ENTITY FROM TWILIGHT FOREST RENDERER //////////////////////////////////////////////
+//            () -> new ForgeSpawnEggItem(ModEntities.STARVIEWER_GIANT, 0x0000FF, 0x87CEEB, new Item.Properties().stacksTo(16))
+//    );
 
 
 

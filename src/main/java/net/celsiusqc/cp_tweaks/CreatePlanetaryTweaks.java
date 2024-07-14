@@ -1,8 +1,6 @@
 package net.celsiusqc.cp_tweaks;
 
 import net.celsiusqc.cp_tweaks.base.block.ModBlocks;
-import net.celsiusqc.cp_tweaks.entity.ModEntities;
-import net.celsiusqc.cp_tweaks.entity.custom.StarviewerGiant;
 import net.celsiusqc.cp_tweaks.fluid.ModFluidTypes;
 import net.celsiusqc.cp_tweaks.fluid.ModFluids;
 import net.celsiusqc.cp_tweaks.item.*;
@@ -20,8 +18,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import software.bernie.geckolib.GeckoLib;
-
-import java.util.Locale;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CreatePlanetaryTweaks.MOD_ID)
@@ -45,7 +41,7 @@ public class CreatePlanetaryTweaks {
         ModBlocks.register(modEventBus);
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
-        ModEntities.register(modEventBus);
+        //ModEntities.register(modEventBus); //////////////////////////////////// DISABLED CUSTOM ENTITY FROM TWILIGHT FOREST RENDERER //////////////////////////////////////////////
 
         GeckoLib.initialize();
 
@@ -69,16 +65,16 @@ public class CreatePlanetaryTweaks {
         // additional setup, if any...
     }
 
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
-    public static class ModEvents {
-        @SubscribeEvent
-        public static void onAttributeCreate(EntityAttributeCreationEvent event) {
-            // This is where you would register your StarviewerGiant's attributes.
-            event.put(ModEntities.STARVIEWER_GIANT.get(), StarviewerGiant.createAttributes().build());
-        }
-
-        // other mod event subscribers...
-    }
+//    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)                   //////////////////////////////////// DISABLED CUSTOM ENTITY FROM TWILIGHT FOREST RENDERER //////////////////////////////////////////////
+//    public static class ModEvents {
+//        @SubscribeEvent
+//        public static void onAttributeCreate(EntityAttributeCreationEvent event) {
+//            // This is where you would register your StarviewerGiant's attributes.
+//            event.put(ModEntities.STARVIEWER_GIANT.get(), StarviewerGiant.createAttributes().build());
+//        }
+//
+//        // other mod event subscribers...
+//    }
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
